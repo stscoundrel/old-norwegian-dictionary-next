@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 page page Matches snapshot 1`] = `
+Array [
+  <main
+    className="container"
+  >
+    <section
+      className="section"
+    >
+      <h1>
+        Page not found
+      </h1>
+      <p>
+        Huh, that's weird.
+      </p>
+    </section>
+  </main>,
+  <footer
+    className="section"
+  >
+    <div
+      className="container"
+    >
+      <p>
+        Copyright © 
+        2021
+      </p>
+    </div>
+  </footer>,
+]
+`;

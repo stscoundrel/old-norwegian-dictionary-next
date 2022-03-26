@@ -1,0 +1,21 @@
+@import 'reset-css';
+@import 'variables';
+@import 'media-queries';
+@import 'typography';
+
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

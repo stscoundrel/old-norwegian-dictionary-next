@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index page Matches snapshot 1`] = `
+Array [
+  <main
+    className="container"
+  >
+    <section
+      className="section"
+    >
+      <p>
+        There is no strength in numbers
+      </p>
+      <p>
+        Have no such misconception
+      </p>
+      <p>
+        But when you need me be assured I wont be far away
+      </p>
+    </section>
+  </main>,
+  <footer
+    className="section"
+  >
+    <div
+      className="container"
+    >
+      <p>
+        Copyright © 
+        2021
+      </p>
+    </div>
+  </footer>,
+]
+`;

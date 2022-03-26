@@ -1,0 +1,55 @@
+{
+  "name": "nextjs-template",
+  "description": "Next.js template with lints & test",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://github.com/stscoundrel/nextjs-template.git",
+  "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "eslint src tests",
+    "fix": "eslint src tests --fix",
+    "jest": "jest --verbose --runInBand --passWithNoTests",
+    "test:unit": "yarn jest",
+    "test:integration": "yarn cypress run --env env=test --spec 'tests/integration/tests/**/*'",
+    "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'"
+  },
+  "dependencies": {
+    "next": "^12.1.0",
+    "next-pwa": "^5.4.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reset-css": "^5.0.1",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.39",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "cypress": "^9.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.1.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.3",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "next-sitemap": "^2.5.4",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.6.2"
+  }
+}
