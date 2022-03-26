@@ -1,11 +1,6 @@
 import { DictionaryEntry } from 'lib/models/dictionary'
 import { AlphabetLetter } from 'lib/services/dictionary'
-
-enum LinkType {
-    Word = 'word',
-    Letter = 'letter',
-    Other = 'other'
-}
+import { ContentType } from 'lib/models/content-types'
 
 export const getWordLink = (word: DictionaryEntry): string => `${process.env.NEXT_PUBLIC_SITE_URL}/word/${word.slug}`
 
@@ -15,14 +10,14 @@ export const getMainUrl = (): string => process.env.NEXT_PUBLIC_SITE_URL ?? ''
 
 export const getCanonicalUrl = (
   content: DictionaryEntry | null,
-  type: LinkType,
+  type: ContentType,
   letter?: AlphabetLetter,
 ) => {
-  if (type === LinkType.Word && content !== null) {
+  if (type === ContentType.Word && content !== null) {
     return getWordLink(content)
   }
 
-  if (type === LinkType.Letter && letter) {
+  if (type === ContentType.Letter && letter) {
     return getLetterLink(letter)
   }
 
