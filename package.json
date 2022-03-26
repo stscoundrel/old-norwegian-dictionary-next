@@ -24,10 +24,12 @@
     "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'"
   },
   "dependencies": {
+    "abbreviatrix": "^1.0.3",
     "next": "^12.1.1",
     "next-pwa": "^5.4.6",
     "old-norse-alphabet": "^1.2.0",
     "old-norwegian-dictionary": "^0.9.0",
+    "old-norwegian-dictionary-abbreviations": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "reset-css": "^5.0.1",
