@@ -3,6 +3,7 @@ import { slugifyLetter } from 'lib/utils/slugs'
 import { getWordLink, getLetterLink } from 'lib/utils/links'
 import { DictionaryEntry } from 'lib/models/dictionary'
 import { ContentType } from 'lib/models/content-types'
+import { Breadcrumb } from 'lib/utils/breadcrumbs'
 
 interface SchemaListItem{
     '@type': string,
@@ -19,11 +20,6 @@ interface SchemaDefinition {
     description?: string,
     itemListElement?: SchemaListItem[],
     inDefinedTermSet?: string,
-}
-
-interface Breadcrumb{
-    label: string,
-    url: string,
 }
 
 const getDefinedTermSetData = (content: DictionaryEntry[]): SchemaDefinition => {
