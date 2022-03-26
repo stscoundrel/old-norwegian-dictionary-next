@@ -3785,6 +3785,13 @@ istanbul-reports@^3.1.3:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
 
+jafningjar@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jafningjar/-/jafningjar-1.0.0.tgz#8a57c714dc010bc3f62a3bd4ddb960f79e662c85"
+  integrity sha512-t6EK6txO8Gv4gvgN2NI2I+qgCZDY8cQCJydBBFBZGiDyIf0fAIUteILvU0zq12wtxsj9XNtkf+vVCzlrNy6WQw==
+  dependencies:
+    volva "^1.0.3"
+
 jake@^10.6.1:
   version "10.8.4"
   resolved "https://registry.yarnpkg.com/jake/-/jake-10.8.4.tgz#f6a8b7bf90c6306f768aa82bb7b98bf4ca15e84a"
@@ -4718,6 +4725,16 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
+old-norse-alphabet@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/old-norse-alphabet/-/old-norse-alphabet-1.2.0.tgz#d0207dd7b28cd0ce6beb7a63636195a8a99db468"
+  integrity sha512-cuUwXiBTcRcAt3Tsq7ixTHX2zBSH1nGcJbkjleGd13R1Hu+8Fk04/wrRnAuiyoACn7p7tpokjhDIuAu+9uQMGw==
+
+old-norwegian-dictionary@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/old-norwegian-dictionary/-/old-norwegian-dictionary-0.9.0.tgz#f125bb9e98134a3ca7e2c6a4808101465e84435e"
+  integrity sha512-Dj0e26yQnfGJ+fAp7W2b4gkTe2hAzMMfU1QZoLOWfEXBpcE0NUUcqNwjEBebItsPua3Zg9sMPPJIkvmQUyiLEg==
+
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -5391,6 +5408,11 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
+slugify@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.5.tgz#c8f5c072bf2135b80703589b39a3d41451fbe8c8"
+  integrity sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ==
+
 source-list-map@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
@@ -5909,6 +5931,11 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+volva@^1.0.3:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/volva/-/volva-1.2.1.tgz#fdaaae59408f894a6770ecab54aa629e613cf5db"
+  integrity sha512-S4M/OeqypH2BYK07+aoy5ursSbAZwUJQlyxM545JLqTsCuk03jwg3aXC5Y5Tq1cBLDGjM5TfkxKR1ZAkt6r45Q==
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"
