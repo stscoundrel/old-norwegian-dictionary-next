@@ -19,7 +19,6 @@ module.exports = {
     'jest/globals': true,
   },
   plugins: [
-    'react',
     'react-hooks',
     'jest',
     'cypress',
