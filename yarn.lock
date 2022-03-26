@@ -1675,6 +1675,11 @@ abab@^2.0.3, abab@^2.0.5:
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.5.tgz#c0b678fb32d60fc1219c784d6a826fe385aeb79a"
   integrity sha512-9IK9EadsbHo6jLWIpxpR6pL0sazTXV6+SQv25ZB+F7Bj9mJNaOc4nCRabwd5M/JwmUa8idz6Eci6eKfJryPs6Q==
 
+abbreviatrix@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/abbreviatrix/-/abbreviatrix-1.0.3.tgz#f1b47f4281b0a02a670aad0660ee8ca8be43aaf6"
+  integrity sha512-+q/8pQe6FviZCwxGsxGtVuK6Pkp4GJ50dnyGhDVNA1r6+u476d5Xg1WXFNh4jDpMa0ZC8leWBYN6i1IvuljUpQ==
+
 acorn-globals@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-6.0.0.tgz#46cdd39f0f8ff08a876619b55f5ac8a6dc770b45"
@@ -4729,6 +4734,11 @@ old-norse-alphabet@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/old-norse-alphabet/-/old-norse-alphabet-1.2.0.tgz#d0207dd7b28cd0ce6beb7a63636195a8a99db468"
   integrity sha512-cuUwXiBTcRcAt3Tsq7ixTHX2zBSH1nGcJbkjleGd13R1Hu+8Fk04/wrRnAuiyoACn7p7tpokjhDIuAu+9uQMGw==
+
+old-norwegian-dictionary-abbreviations@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/old-norwegian-dictionary-abbreviations/-/old-norwegian-dictionary-abbreviations-1.0.0.tgz#8307c66defca4245bc57a65e2e102e4ac7cd4602"
+  integrity sha512-mE4GAwpFhZlOrQfHcSVM7UYjqfTetzDVVlITEJ8QvRMVOdagLIyhka/l1gL0ZDUsI6R1FUUPk3YRPe4F1iDLeQ==
 
 old-norwegian-dictionary@^0.9.0:
   version "0.9.0"
