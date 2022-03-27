@@ -23,7 +23,7 @@ export async function getStaticProps() {
 
 export default function Index({ letters }: IndexProps) {
   return (
-    <Layout letters={letters} type={ContentType.Page}>
+    <Layout letters={letters} type={ContentType.Page} content={null} letter={null} noSearch={false}>
       <ContentArea>
         <h1 className="h2">Dictionary of the Old Norwegian Language</h1>
         <p>Online version of the `&quot;<em>Ordbog over det gamle norske Sprog`</em>&quot;
