@@ -12,4 +12,4 @@ jobs:
       name: Alliser action step
       with:
         extensions: .ts,.tsx,.scss,.snap
-        folders: src,tests
+        folders: src,tests/unit
