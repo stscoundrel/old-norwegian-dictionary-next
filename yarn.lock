@@ -4527,6 +4527,11 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
+markari@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/markari/-/markari-1.0.3.tgz#40264d2503b20059ab1a3189fca6bc25db86975e"
+  integrity sha512-g3QDony4ZVemszuS9QEQPeYjSIGWcBOmhPmKM+7G84nQ+evlqtlCqntjTAMUVJtn4cBPMSs+0QsTOOMrSyrErA==
+
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
