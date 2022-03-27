@@ -15,8 +15,12 @@ export default function Footer({ letters }: FooterProps) {
 
         <ContentArea>
           <h2>About</h2>
-          <p>Based on `&quot;Dictionary of the Old Norwegian Language.</p>
-          <p>Its is the largest Old Norse to Norwegian dictionary, containing over 40 000 word definitions. While the original dictionary is called dictionary of "old norwegian", it is practically a dictionary of western Old Norse. Technically "Old Norwegian" would be a later stage in the language.</p>
+          <p>Based on &quot;Dictionary of the Old Norwegian Language.&quot;</p>
+          <p>Its is the largest Old Norse to Norwegian dictionary,
+            containing over 40 000 word definitions.
+            While the original dictionary is called dictionary of &quot;Old Norwegian&quot;,
+            it is practically a dictionary of western Old Norse.
+            Technically &quot;Old Norwegian&quot; would be a later stage in the language.</p>
           <p>It was published in 1800s,
           which leads to there being public domain versions of the book available.</p>
         </ContentArea>
@@ -61,7 +65,7 @@ export default function Footer({ letters }: FooterProps) {
             <ul>
               <li>
                 <ExternalLink
-                  title="Cleasby & Vigfusson Old Norse Dictionary"
+                  title="Cleasby and Vigfusson Old Norse Dictionary"
                   href="https://cleasby-vigfusson-dictionary.vercel.app/"
                 />
               </li>

@@ -608,20 +608,13 @@ Array [
           About
         </h2>
         <p>
-          Based on \`"A Concise Dictionary of Old Icelandic\`" dictionary.
+          Based on "Dictionary of the Old Norwegian Language."
         </p>
         <p>
-          Geir Zoëga attempted to to make an easier-to-approach version of the more full 
-          <a
-            href="https://cleasby-vigfusson-dictionary.vercel.app/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Cleasby - Vigfusson dictionary.
-          </a>
+          Its is the largest Old Norse to Norwegian dictionary, containing over 40 000 word definitions. While the original dictionary is called dictionary of "Old Norwegian", it is practically a dictionary of western Old Norse. Technically "Old Norwegian" would be a later stage in the language.
         </p>
         <p>
-          It was published in 1910, which leads to there being many public domain versions of the book available.
+          It was published in 1800s, which leads to there being public domain versions of the book available.
         </p>
       </section>
       <section
@@ -651,7 +644,7 @@ Array [
           <ul>
             <li>
               <a
-                href="https://github.com/stscoundrel/old-icelandic-zoega-next"
+                href="https://github.com/stscoundrel/old-norwegian-dictionary-next"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -660,7 +653,7 @@ Array [
             </li>
             <li>
               <a
-                href="https://github.com/stscoundrel/old-icelandic-zoega"
+                href="https://github.com/stscoundrel/old-norwegian-dictionary"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -669,7 +662,7 @@ Array [
             </li>
             <li>
               <a
-                href="https://github.com/stscoundrel/old-icelandic-zoega-abbreviations"
+                href="https://github.com/stscoundrel/old-norwegian-dictionary-abbreviations"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -684,16 +677,25 @@ Array [
           <h4
             className="navTitle"
           >
-            Related packages
+            Related dictionary projects
           </h4>
           <ul>
             <li>
               <a
-                href="https://github.com/stscoundrel/younger-futhark"
+                href="https://cleasby-vigfusson-dictionary.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Younger Futhark Runes
+                Cleasby and Vigfusson Old Norse Dictionary
+              </a>
+            </li>
+            <li>
+              <a
+                href="old-icelandic.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                A Concise Dictionary of Old Icelandic
               </a>
             </li>
             <li>
@@ -703,51 +705,6 @@ Array [
                 target="_blank"
               >
                 Old Norse Alphabet
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/old-norse-alphabet-sort"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Old Norse Alphabet Sort
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/gangleri"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Gangleri
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/teljari"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Teljari
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/markari"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Markari
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/spyrjari"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Spyrjari
               </a>
             </li>
           </ul>
@@ -1141,7 +1098,7 @@ Array [
       <small
         className="copyright"
       >
-        Copyright © 2021 - 2021
+        Copyright © 2022 - 2021
         <br />
         <a
           href="https://github.com/stscoundrel"
@@ -1772,20 +1729,13 @@ Array [
           About
         </h2>
         <p>
-          Based on \`"A Concise Dictionary of Old Icelandic\`" dictionary.
+          Based on "Dictionary of the Old Norwegian Language."
         </p>
         <p>
-          Geir Zoëga attempted to to make an easier-to-approach version of the more full 
-          <a
-            href="https://cleasby-vigfusson-dictionary.vercel.app/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Cleasby - Vigfusson dictionary.
-          </a>
+          Its is the largest Old Norse to Norwegian dictionary, containing over 40 000 word definitions. While the original dictionary is called dictionary of "Old Norwegian", it is practically a dictionary of western Old Norse. Technically "Old Norwegian" would be a later stage in the language.
         </p>
         <p>
-          It was published in 1910, which leads to there being many public domain versions of the book available.
+          It was published in 1800s, which leads to there being public domain versions of the book available.
         </p>
       </section>
       <section
@@ -1815,7 +1765,7 @@ Array [
           <ul>
             <li>
               <a
-                href="https://github.com/stscoundrel/old-icelandic-zoega-next"
+                href="https://github.com/stscoundrel/old-norwegian-dictionary-next"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -1824,7 +1774,7 @@ Array [
             </li>
             <li>
               <a
-                href="https://github.com/stscoundrel/old-icelandic-zoega"
+                href="https://github.com/stscoundrel/old-norwegian-dictionary"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -1833,7 +1783,7 @@ Array [
             </li>
             <li>
               <a
-                href="https://github.com/stscoundrel/old-icelandic-zoega-abbreviations"
+                href="https://github.com/stscoundrel/old-norwegian-dictionary-abbreviations"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -1848,16 +1798,25 @@ Array [
           <h4
             className="navTitle"
           >
-            Related packages
+            Related dictionary projects
           </h4>
           <ul>
             <li>
               <a
-                href="https://github.com/stscoundrel/younger-futhark"
+                href="https://cleasby-vigfusson-dictionary.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Younger Futhark Runes
+                Cleasby and Vigfusson Old Norse Dictionary
+              </a>
+            </li>
+            <li>
+              <a
+                href="old-icelandic.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                A Concise Dictionary of Old Icelandic
               </a>
             </li>
             <li>
@@ -1867,51 +1826,6 @@ Array [
                 target="_blank"
               >
                 Old Norse Alphabet
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/old-norse-alphabet-sort"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Old Norse Alphabet Sort
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/gangleri"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Gangleri
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/teljari"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Teljari
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/markari"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Markari
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/stscoundrel/spyrjari"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Spyrjari
               </a>
             </li>
           </ul>
@@ -2305,7 +2219,7 @@ Array [
       <small
         className="copyright"
       >
-        Copyright © 2021 - 2021
+        Copyright © 2022 - 2021
         <br />
         <a
           href="https://github.com/stscoundrel"

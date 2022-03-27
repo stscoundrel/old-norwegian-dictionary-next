@@ -29,7 +29,8 @@ export default function Index({ letters }: IndexProps) {
         <p>Online version of the `&quot;<em>Ordbog over det gamle norske Sprog`</em>&quot;
         dictionary by Johan Fritzner, originally published in the late 1800s</p>
 
-        <p>The dictionary contains over 40 000 translations from Old Norwegian/Norse to Norwegian</p>
+        <p>The dictionary contains over 40 000 translations
+          from Old Norwegian/Norse to Norwegian</p>
 
         <Link href="/search">
          <a className="button">Search the dictionary</a>
