@@ -7,10 +7,165 @@ exports[`Footer component Matches snapshot 1`] = `
   <div
     className="container"
   >
-    <p>
-      Copyright © 
-      2021
-    </p>
+    <section
+      className="section"
+    >
+      <h2>
+        About
+      </h2>
+      <p>
+        Based on "Dictionary of the Old Norwegian Language."
+      </p>
+      <p>
+        Its is the largest Old Norse to Norwegian dictionary, containing over 40 000 word definitions. While the original dictionary is called dictionary of "Old Norwegian", it is practically a dictionary of western Old Norse. Technically "Old Norwegian" would be a later stage in the language.
+      </p>
+      <p>
+        It was published in 1800s, which leads to there being public domain versions of the book available.
+      </p>
+    </section>
+    <section
+      className="section"
+    >
+      <h3>
+        Old Norse language
+      </h3>
+      <p>
+        Old Norse was a North Germanic language that was spoken by inhabitants of Scandinavia and their overseas settlements from about the 7th to the 15th centuries.
+      </p>
+      <p>
+        Also known as "the viking language", "Old Nordic", or "Old Scandinavian"
+      </p>
+    </section>
+    <div
+      className="navs"
+    >
+      <nav
+        className="nav"
+      >
+        <h4
+          className="navTitle"
+        >
+          Dictionary project
+        </h4>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/stscoundrel/old-norwegian-dictionary-next"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Source code
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/stscoundrel/old-norwegian-dictionary"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Data source
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/stscoundrel/old-norwegian-dictionary-abbreviations"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Abbreviations
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav
+        className="nav"
+      >
+        <h4
+          className="navTitle"
+        >
+          Related dictionary projects
+        </h4>
+        <ul>
+          <li>
+            <a
+              href="https://cleasby-vigfusson-dictionary.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Cleasby and Vigfusson Old Norse Dictionary
+            </a>
+          </li>
+          <li>
+            <a
+              href="old-icelandic.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              A Concise Dictionary of Old Icelandic
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/stscoundrel/old-norse-alphabet"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Old Norse Alphabet
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav
+        className="nav"
+      >
+        <h4
+          className="navTitle"
+        >
+          Quick links
+        </h4>
+        <ul
+          className="navColumns"
+        >
+          <li
+            className="navColumnItem"
+          >
+            <a
+              className="link"
+              href="/letter/a"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              A
+            </a>
+          </li>
+          <li
+            className="navColumnItem"
+          >
+            <a
+              className="link"
+              href="/letter/b"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              B
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <small
+      className="copyright"
+    >
+      Copyright © 2022 - 2021
+      <br />
+      <a
+        href="https://github.com/stscoundrel"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Sampo Silvennoinen / StScoundrel
+      </a>
+    </small>
   </div>
 </footer>
 `;

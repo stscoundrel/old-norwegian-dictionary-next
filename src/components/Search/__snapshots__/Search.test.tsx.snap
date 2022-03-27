@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component Matches snapshot 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <input
+    aria-label="Search"
+    className="input"
+    name="search"
+    onChange={[Function]}
+    type="search"
+    value=""
+  />
+  <button
+    className="button button--secondary button--no-margs"
+    name="submit"
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+`;
+
+exports[`Search component Triggers router action when submitted 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <input
+    aria-label="Search"
+    className="input"
+    name="search"
+    onChange={[Function]}
+    type="search"
+    value=""
+  />
+  <button
+    className="button button--secondary button--no-margs"
+    name="submit"
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+`;

@@ -79,7 +79,7 @@ const getDefault = (): SchemaDefinition => {
  * Get schema.org JSON-LD by type.
  */
 export const getSchema = (
-  content?: DictionaryEntry | DictionaryEntry[] | Breadcrumb[],
+  content: DictionaryEntry | DictionaryEntry[] | Breadcrumb[] | null,
   type?: ContentType,
 ): string => {
   if (type === ContentType.Word && !Array.isArray(content)) {

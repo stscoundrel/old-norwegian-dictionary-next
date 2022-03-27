@@ -1,0 +1,44 @@
+.section {
+  border-bottom: 1px solid $color-blue;
+  padding: 16px 0;
+}
+
+.link {
+  position: relative;
+  color: $color-blue;
+  text-decoration: none;
+  padding: 10px 0;
+  padding-right: 15px;
+  margin-right: 20px;
+  font-size: smaller;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "/";
+    position: absolute;
+    right: -5px;
+    top: 9px;
+  }
+
+  &:last-of-type {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 0;
+    padding-right: 0;
+    display: block;
+
+    &::after {
+      content: "";
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .link {
+    font-size: initial;
+
+    &:last-of-type {
+      display: inline;
+    }
+  }
+}

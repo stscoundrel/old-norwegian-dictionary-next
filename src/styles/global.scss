@@ -2,6 +2,9 @@
 @import 'variables';
 @import 'media-queries';
 @import 'typography';
+@import 'containers';
+@import 'buttons';
+@import 'links';
 
 body,
 html {
@@ -18,4 +21,12 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.blue {
+  color: $color-blue;
 }

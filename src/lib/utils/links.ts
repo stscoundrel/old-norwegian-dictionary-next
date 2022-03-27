@@ -9,11 +9,11 @@ export const getLetterLink = (letter: AlphabetLetter): string => `${process.env.
 export const getMainUrl = (): string => process.env.NEXT_PUBLIC_SITE_URL ?? ''
 
 export const getCanonicalUrl = (
-  content: DictionaryEntry | null,
+  content: DictionaryEntry | DictionaryEntry[] | null,
   type: ContentType,
-  letter?: AlphabetLetter,
+  letter: AlphabetLetter | null,
 ) => {
-  if (type === ContentType.Word && content !== null) {
+  if (type === ContentType.Word && content !== null && !Array.isArray(content)) {
     return getWordLink(content)
   }
 
