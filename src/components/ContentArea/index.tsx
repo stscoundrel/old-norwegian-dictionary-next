@@ -1,6 +1,10 @@
 import styles from './ContentArea.module.scss'
 
-export default function ContentArea({ children }) {
+interface ContentAreaProps{
+  children: JSX.Element | JSX.Element[],
+}
+
+export default function ContentArea({ children }: ContentAreaProps) {
   return (
     <section className={styles.section}>
       {children}

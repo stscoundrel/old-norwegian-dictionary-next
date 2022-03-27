@@ -1,0 +1,60 @@
+.section {
+    padding: 16px 0;
+    margin-top: 40px;
+    color: white;
+    background-color: $color-blue;
+  
+    a {
+      color: white;
+    }
+  }
+  
+  .navs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .navColumns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .navColumnItem {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .navTitle {
+    margin-bottom: 16px;
+  }
+  
+  .copyright {
+    margin: 30px 0 20px;
+    display: block;
+    text-align: center;
+  
+    a {
+      margin-left: 5px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .nav {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .nav {
+      flex-basis: 33.3%;
+    }
+  
+    .navs {
+      margin-top: 45px;
+    }
+  }
