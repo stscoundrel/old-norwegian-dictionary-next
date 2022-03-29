@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LetterHeader component Matches snapshot 1`] = `
+<header
+  className="section"
+>
+  <h1
+    className="title"
+  >
+    Letter 
+    S
+  </h1>
+  <small
+    className="subHeading"
+  >
+    Old Norwegian Dictionary - Letter 
+    S
+  </small>
+  <p>
+    Old Norwegian words starting with letter 
+    S
+  </p>
+  <small
+    className="count"
+  >
+    Total of 
+    60
+     words
+  </small>
+</header>
+`;
