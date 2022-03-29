@@ -1,0 +1,11 @@
+.link {
+  color: $color-blue;
+  display: block;
+  max-width: 160px;
+  padding: 2px 0;
+  margin: 4px 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

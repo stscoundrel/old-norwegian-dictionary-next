@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WordList component Matches snapshot 1`] = `
+<ul
+  className="list"
+>
+  <li>
+    <a
+      className="link"
+      href="/word/af-burdr"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      af-burðr
+    </a>
+  </li>
+  <li>
+    <a
+      className="link"
+      href="/word/af-bud"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      af-búð
+    </a>
+  </li>
+  <li>
+    <a
+      className="link"
+      href="/word/af-dalr"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      af-dalr
+    </a>
+  </li>
+  <li>
+    <a
+      className="link"
+      href="/word/af-deilingr"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      af-deilingr
+    </a>
+  </li>
+  <li>
+    <a
+      className="link"
+      href="/word/af-drattr"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      af-dráttr
+    </a>
+  </li>
+</ul>
+`;
