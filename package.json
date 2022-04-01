@@ -31,8 +31,8 @@
     "old-norse-alphabet": "^1.2.0",
     "old-norwegian-dictionary": "^0.9.0",
     "old-norwegian-dictionary-abbreviations": "^1.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "reset-css": "^5.0.1",
     "sass": "^1.49.9",
     "slugify": "^1.6.5",
@@ -55,7 +55,7 @@
     "jafningjar": "^1.0.0",
     "jest": "^27.5.1",
     "next-sitemap": "^2.5.14",
-    "react-test-renderer": "^17.0.2",
+    "react-test-renderer": "^18.0.0",
     "typescript": "^4.6.3"
   }
 }
