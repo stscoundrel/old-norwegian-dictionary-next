@@ -36,7 +36,8 @@
     "reset-css": "^5.0.1",
     "sass": "^1.49.10",
     "slugify": "^1.6.5",
-    "teljari": "^1.1.1"
+    "teljari": "^1.1.1",
+    "younger-futhark": "^1.1.2"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
