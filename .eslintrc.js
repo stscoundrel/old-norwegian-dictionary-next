@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'airbnb-base',
-    'next',
+    'next/core-web-vitals',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -19,7 +19,6 @@ module.exports = {
     'jest/globals': true,
   },
   plugins: [
-    'react-hooks',
     'jest',
     'cypress',
     '@typescript-eslint',
@@ -42,7 +41,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/no-extraneous-dependencies': 0,
     'import/extensions': 0,
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": ["error"]
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
   },
 };
