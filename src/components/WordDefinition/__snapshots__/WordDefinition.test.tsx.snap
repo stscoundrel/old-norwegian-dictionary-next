@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WordDefinition component Matches snapshot 1`] = `
+<article
+  className="section"
+>
+  <header>
+    <h1
+      lang="non"
+    >
+      Þrályndi
+    </h1>
+    <small
+      className="subHeading"
+    >
+      Old Norwegian Dictionary - 
+      þrályndi
+    </small>
+    <p>
+      Meaning of Old Norwegian word 
+      <em>
+        "
+        þrályndi
+        "
+      </em>
+    </p>
+  </header>
+  <dl
+    className="definitionList"
+  >
+    <dt>
+      <strong>
+        þrályndi
+      </strong>
+    </dt>
+    <dd
+      className="itemDescription"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "þrályndi, <abbr title=\\"Neutrum.\\">n.</abbr> d. <abbr title=\\"substantiv.\\">s.</abbr>; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.",
+        }
+      }
+      lang="nor"
+    />
+  </dl>
+  <p>
+    <strong>
+      Part of speech:
+    </strong>
+     
+    <em>
+      n
+    </em>
+  </p>
+  <p>
+    Possible runic inscription in 
+    <em>
+      Younger Futhark:
+    </em>
+    <span
+      className="rune"
+    >
+      ᚦᚱᛅᛚᚢᚾᛏᛁ
+    </span>
+  </p>
+  <div
+    className="abbreviations"
+  >
+    <div
+      className="column"
+    >
+      <h4>
+        Abbreviations used:
+      </h4>
+      <dl
+        className="wrap"
+      >
+        <dt
+          className="abbreviation"
+        >
+          <strong>
+            n.
+          </strong>
+        </dt>
+        <dd
+          className="explanation"
+        >
+          Neutrum.
+        </dd>
+      </dl>
+      <dl
+        className="wrap"
+      >
+        <dt
+          className="abbreviation"
+        >
+          <strong>
+            s.
+          </strong>
+        </dt>
+        <dd
+          className="explanation"
+        >
+          substantiv.
+        </dd>
+      </dl>
+    </div>
+  </div>
+</article>
+`;
