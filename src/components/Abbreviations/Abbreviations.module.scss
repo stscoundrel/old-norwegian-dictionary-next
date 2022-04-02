@@ -1,0 +1,40 @@
+.column {
+  margin-bottom: 30px;
+}
+
+.wrap {
+  display: flex;
+}
+
+.abbreviation {
+  flex: 1;
+  position: relative;
+  padding-right: 20px;
+
+  &::after {
+    content: '→';
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+}
+.explanation {
+  flex: 2;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .abbreviations {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .column {
+    flex-basis: 50%;
+    width: 50%;
+  }
+
+  .explanation {
+    flex: 3;
+  }
+}

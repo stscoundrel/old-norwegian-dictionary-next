@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Abbreviations component Matches the snapshot 1`] = `
+<div
+  className="abbreviations"
+>
+  <div
+    className="column"
+  >
+    <h4>
+      Abbreviations used:
+    </h4>
+    <dl
+      className="wrap"
+    >
+      <dt
+        className="abbreviation"
+      >
+        <strong>
+          adj.
+        </strong>
+      </dt>
+      <dd
+        className="explanation"
+      >
+        Adjectiv.
+      </dd>
+    </dl>
+    <dl
+      className="wrap"
+    >
+      <dt
+        className="abbreviation"
+      >
+        <strong>
+          f.
+        </strong>
+      </dt>
+      <dd
+        className="explanation"
+      >
+        Feminin.
+      </dd>
+    </dl>
+  </div>
+</div>
+`;
