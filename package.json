@@ -1,9 +1,9 @@
 {
-  "name": "nextjs-template",
-  "description": "Next.js template with lints & test",
+  "name": "old-norwegian-dictionary-next",
+  "description": "Next.js implementation of Old Norwegian Dictionary",
   "version": "0.1.0",
   "private": true,
-  "repository": "https://github.com/stscoundrel/nextjs-template.git",
+  "repository": "https://github.com/stscoundrel/old-norwegian-dictionary-next.git",
   "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
   "licenses": [
     {
