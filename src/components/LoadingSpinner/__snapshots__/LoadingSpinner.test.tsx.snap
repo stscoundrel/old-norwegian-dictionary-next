@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading spinner component Matches snapshot 1`] = `
+<img
+  alt=""
+  className="spinner"
+  role="presentation"
+  src="/loading.svg"
+/>
+`;

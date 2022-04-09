@@ -2,8 +2,8 @@ import { markWords } from 'markari'
 import { getAbbreviations, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import { DictionaryEntry } from 'lib/models/dictionary'
 
-interface SearchResult extends DictionaryEntry{
-    foundIn: string,
+export interface SearchResult extends DictionaryEntry{
+    foundIn: string[],
 }
 
 type Criteria = 'headword' | 'definition'
