@@ -1,0 +1,1 @@
+Sitemap: https://old-norwegian-dictionary.vercel.app/sitemap.xml

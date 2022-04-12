@@ -14,7 +14,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint src tests",
     "fix": "eslint src tests --fix",
@@ -35,6 +34,7 @@
     "react-dom": "^18.0.0",
     "reset-css": "^5.0.1",
     "sass": "^1.49.11",
+    "sitemap": "^7.1.1",
     "slugify": "^1.6.5",
     "teljari": "^1.1.1",
     "younger-futhark": "^1.1.2"
@@ -54,7 +54,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jafningjar": "^1.0.0",
     "jest": "^27.5.1",
-    "next-sitemap": "^2.5.17",
+    "node-mocks-http": "^1.11.0",
     "react-test-renderer": "^18.0.0",
     "typescript": "^4.6.3"
   }
