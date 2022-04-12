@@ -14,7 +14,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint src tests",
     "fix": "eslint src tests --fix",
