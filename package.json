@@ -23,7 +23,7 @@
     "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"90\", \"branches\":\"90\", \"lines\":\"90\"}}'"
   },
   "dependencies": {
-    "abbreviatrix": "^1.0.3",
+    "abbreviatrix": "^1.0.4",
     "markari": "^1.0.3",
     "next": "^12.1.4",
     "next-pwa": "^5.4.6",
