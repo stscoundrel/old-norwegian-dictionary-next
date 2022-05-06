@@ -1,4 +1,4 @@
-import { DictionaryEntry as RawDictionaryEntry } from 'old-norwegian-dictionary/dist/models'
+import { DictionaryEntry as RawDictionaryEntry } from 'old-norwegian-dictionary/dist'
 
 export type OriginalDictionaryEntry = RawDictionaryEntry
 

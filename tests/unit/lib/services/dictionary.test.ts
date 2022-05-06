@@ -18,7 +18,7 @@ describe('Dictionary tests', () => {
 
   test('Dictionary has added url slugs to source', () => {
     dictionary.forEach((entry) => {
-      expect(Object.keys(entry)).toEqual(['word', 'partOfSpeech', 'definition', 'slug'])
+      expect(Object.keys(entry)).toEqual(['word', 'definition', 'partOfSpeech', 'slug'])
     })
   })
 

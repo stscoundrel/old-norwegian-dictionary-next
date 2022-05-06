@@ -70,6 +70,8 @@ Array [
           decoding="async"
           href="/"
           onClick={[Function]}
+          onError={[Function]}
+          onLoad={[Function]}
           onMouseEnter={[Function]}
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
