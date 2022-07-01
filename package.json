@@ -30,7 +30,7 @@
     "old-norse-alphabet": "^1.2.0",
     "old-norwegian-dictionary": "^1.0.1",
     "old-norwegian-dictionary-abbreviations": "^1.0.3",
-    "react": "^18.1.0",
+    "react": "^18.2.0",
     "react-dom": "^18.1.0",
     "reset-css": "^5.0.1",
     "sass": "^1.51.0",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.5.0",
-    "@types/react": "^18.0.8",
+    "@types/react": "^18.0.14",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "cypress": "^9.6.0",
