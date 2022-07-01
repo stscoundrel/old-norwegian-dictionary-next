@@ -4851,10 +4851,10 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
-old-norse-alphabet@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/old-norse-alphabet/-/old-norse-alphabet-1.2.0.tgz#d0207dd7b28cd0ce6beb7a63636195a8a99db468"
-  integrity sha512-cuUwXiBTcRcAt3Tsq7ixTHX2zBSH1nGcJbkjleGd13R1Hu+8Fk04/wrRnAuiyoACn7p7tpokjhDIuAu+9uQMGw==
+old-norse-alphabet@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/old-norse-alphabet/-/old-norse-alphabet-1.2.2.tgz#fb2102ad0d83e4329e44c31244266dc5d40a690b"
+  integrity sha512-t/CMoRgIo6bGwqX61RG+lomiiWpvyERZ8BdGCDdq0jEyXLhHvgy6MKU0JyemMJ8txAAdfO6EXgdeO9gSqKnjsw==
 
 old-norwegian-dictionary-abbreviations@^1.0.3:
   version "1.0.3"
