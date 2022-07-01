@@ -4861,10 +4861,10 @@ old-norwegian-dictionary-abbreviations@^1.0.3:
   resolved "https://registry.yarnpkg.com/old-norwegian-dictionary-abbreviations/-/old-norwegian-dictionary-abbreviations-1.0.3.tgz#779819a39fe702715cc8fcc4c942bdc1102823b6"
   integrity sha512-kddAcZV7eFs331NLeuj6FY3q3SfQeF/yGAY6ZjmSUhmusldRAD2z4N954rWPczDmimKc3hSE2xYvTWfst3Wlag==
 
-old-norwegian-dictionary@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/old-norwegian-dictionary/-/old-norwegian-dictionary-1.0.1.tgz#d56463404aa89c0218f9372c5b6ad451eff05158"
-  integrity sha512-q90tEh/hsTBzAsxvLPE7F8Ceo2aNqIouHppQ5U19uQK7vXXNrD+rM0gxRpwtNgxxgsE64GrLaY00+5sDuqcI7A==
+old-norwegian-dictionary@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/old-norwegian-dictionary/-/old-norwegian-dictionary-1.0.2.tgz#511ec15a52668bdc528bfa7d7478f6d2b39568d9"
+  integrity sha512-OX+Aw17Is/0Ubu+E1EAmsrdgdgYU16wUX0em2nY84xbf9CGDPb8dVlXCyur+TJEmJfYAaueGK1dP1tfJ/xTnJQ==
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
