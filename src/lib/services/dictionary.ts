@@ -3,6 +3,8 @@ import { VALID_AS_FIRST } from 'old-norse-alphabet'
 import { slugifyWord, slugifyLetter } from '../utils/slugs'
 import { OriginalDictionaryEntry, DictionaryEntry } from '../models/dictionary'
 
+let cachedDictionary: DictionaryEntry[] | null = null
+
 export interface AlphabetLetter{
   letter: string,
   slug: string,
@@ -32,12 +34,16 @@ const addSlugs = (words: OriginalDictionaryEntry[]): DictionaryEntry[] => {
 }
 
 export const getAllWords = (): DictionaryEntry[] => {
+  if (cachedDictionary) return cachedDictionary
+
   const words = getDictionary()
 
   /**
    * Add URL safe slugs.
    */
   const formattedWords = addSlugs(words)
+
+  cachedDictionary = formattedWords
 
   return formattedWords
 }
