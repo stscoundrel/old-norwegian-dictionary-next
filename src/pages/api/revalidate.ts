@@ -7,8 +7,10 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { start, end } = req.query
-    const revalidates = getAllWords()
+    const words = getAllWords()
+    const { start, end: givenEnd } = req.query
+    const end = givenEnd <= words.length ? givenEnd : words.length - 1
+    const revalidates = words
       .sort((a, b) => a.slug.localeCompare(b.slug))
       .map((word) => getWordPath(word))
       .slice(start, end)
