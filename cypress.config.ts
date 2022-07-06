@@ -6,6 +6,7 @@ export default defineConfig({
   fixturesFolder: 'tests/integration/config/fixtures',
   screenshotsFolder: 'tests/integration/logs/screenshots',
   videosFolder: 'tests/integration/logs/videos',
+  video: false,
   e2e: {
     specPattern: 'tests/integration/tests/**/*.cy.{js,jsx,ts,tsx}',
     supportFile: 'tests/integration/config/support.ts',
