@@ -6,6 +6,8 @@ export const getWordLink = (word: DictionaryEntry): string => `${process.env.NEX
 
 export const getLetterLink = (letter: AlphabetLetter): string => `${process.env.NEXT_PUBLIC_SITE_URL}/letter/${letter.slug}`
 
+export const getWordPath = (word: DictionaryEntry): string => `/word/${word.slug}`
+
 export const getMainUrl = (): string => process.env.NEXT_PUBLIC_SITE_URL ?? ''
 
 export const getCanonicalUrl = (
