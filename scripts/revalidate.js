@@ -2,7 +2,9 @@ const WORDS = 42021
 
 let start = 0
 
-const revalidatePages = async (secret, baseUrl = 'http://127.0.1:3000') => {
+// Url for localhost: http://127.0.1:3000
+
+const revalidatePages = async (secret, baseUrl = 'https://old-norwegian-dictionary.vercel.app/') => {
   try {
     while (start < WORDS) {
       const end = start + 500
