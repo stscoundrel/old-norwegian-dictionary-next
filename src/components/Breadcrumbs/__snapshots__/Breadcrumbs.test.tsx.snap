@@ -12,6 +12,7 @@ exports[`Breadcrumbs component Default page: matches snapshot 1`] = `
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
       Old Norwegian Dictionary
     </a>
@@ -39,6 +40,7 @@ exports[`Breadcrumbs component Letter page: matches snapshot 1`] = `
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
       Old Norwegian Dictionary
     </a>
@@ -47,6 +49,7 @@ exports[`Breadcrumbs component Letter page: matches snapshot 1`] = `
       href="/letter/u2"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
       Letter Ú
     </a>
@@ -74,6 +77,7 @@ exports[`Breadcrumbs component Word page: matches snapshot 1`] = `
       href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
       Old Norwegian Dictionary
     </a>
@@ -82,6 +86,7 @@ exports[`Breadcrumbs component Word page: matches snapshot 1`] = `
       href="/letter/u2"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
       Letter Ú
     </a>
@@ -90,6 +95,7 @@ exports[`Breadcrumbs component Word page: matches snapshot 1`] = `
       href="/word/ufrjals"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      onTouchStart={[Function]}
     >
       Úfrjáls
     </a>

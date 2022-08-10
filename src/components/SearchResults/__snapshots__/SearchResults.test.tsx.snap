@@ -20,6 +20,7 @@ Array [
           href="/word/adal"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
           aðal
         </a>
@@ -44,6 +45,7 @@ Array [
           href="/word/adal-vellir"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
           aðal-vellir
         </a>
@@ -68,6 +70,7 @@ Array [
           href="/word/af"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
           af
         </a>
