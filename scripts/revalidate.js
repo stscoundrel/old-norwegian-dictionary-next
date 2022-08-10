@@ -7,7 +7,7 @@ let start = 0
 const revalidatePages = async (secret, baseUrl = 'https://old-norwegian-dictionary.vercel.app/') => {
   try {
     while (start < WORDS) {
-      const end = start + 500
+      const end = start + 250
       const url = `${baseUrl}/api/revalidate?secret=${secret}&start=${start}&end=${end}`
       console.time(`${start} - ${end}`)
       // eslint-disable-next-line no-await-in-loop
