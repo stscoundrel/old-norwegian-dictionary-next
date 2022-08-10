@@ -9,6 +9,7 @@ exports[`Search teaser component Matches snapshot 1`] = `
     href="/word/adal-vellir"
     onClick={[Function]}
     onMouseEnter={[Function]}
+    onTouchStart={[Function]}
   >
     aðal-vellir
   </a>
