@@ -4908,10 +4908,10 @@ old-norse-alphabet@^1.2.2:
   resolved "https://registry.yarnpkg.com/old-norse-alphabet/-/old-norse-alphabet-1.2.2.tgz#fb2102ad0d83e4329e44c31244266dc5d40a690b"
   integrity sha512-t/CMoRgIo6bGwqX61RG+lomiiWpvyERZ8BdGCDdq0jEyXLhHvgy6MKU0JyemMJ8txAAdfO6EXgdeO9gSqKnjsw==
 
-old-norwegian-dictionary-abbreviations@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/old-norwegian-dictionary-abbreviations/-/old-norwegian-dictionary-abbreviations-1.0.4.tgz#192c52c3da8c103b09f33b8cc21a286203fb8d30"
-  integrity sha512-bfvP5o2TbkyzlU8ebU+CqGZjDBNUZdKVxLW/aWftkusZwecK5bhR+wgaS+SbHsP4NOAyE1yAWa9LNVCMcMqvpg==
+old-norwegian-dictionary-abbreviations@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/old-norwegian-dictionary-abbreviations/-/old-norwegian-dictionary-abbreviations-1.0.5.tgz#e0dcb456e3ace5aa7aa34ee94e4ce9bdc68ec8ad"
+  integrity sha512-AC6CkA6ArxSsPAVeRHi8RCgXDUUsNW73BiabRGr5zFX9DYHcwwrWOQyczQGLrpaSK9T6wRoqslEZNE9gJP4lFw==
 
 old-norwegian-dictionary@^1.0.2:
   version "1.0.2"
