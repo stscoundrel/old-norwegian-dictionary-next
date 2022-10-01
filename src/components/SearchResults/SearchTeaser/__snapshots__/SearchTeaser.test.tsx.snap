@@ -17,7 +17,7 @@ exports[`Search teaser component Matches snapshot 1`] = `
     <li
       className="foundIn"
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "In headword",
         }
       }

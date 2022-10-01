@@ -40,8 +40,8 @@ exports[`WordDefinition component Matches snapshot 1`] = `
     <dd
       className="itemDescription"
       dangerouslySetInnerHTML={
-        Object {
-          "__html": "þrályndi, <abbr title=\\"Neutrum.\\">n.</abbr> d. <abbr title=\\"substantiv.\\">s.</abbr>; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.",
+        {
+          "__html": "þrályndi, <abbr title="Neutrum.">n.</abbr> d. <abbr title="substantiv.">s.</abbr>; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.",
         }
       }
       lang="nor"

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation component Matches snapshot 1`] = `
-Array [
+[
   <div
     className="topBarSpacer"
   />,
@@ -13,7 +13,7 @@ Array [
     >
       <span
         style={
-          Object {
+          {
             "background": "none",
             "border": 0,
             "boxSizing": "border-box",
@@ -31,7 +31,7 @@ Array [
       >
         <span
           style={
-            Object {
+            {
               "background": "none",
               "border": 0,
               "boxSizing": "border-box",
@@ -50,7 +50,7 @@ Array [
             aria-hidden={true}
             src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
             style={
-              Object {
+              {
                 "background": "none",
                 "border": 0,
                 "display": "block",
@@ -76,7 +76,7 @@ Array [
           onTouchStart={[Function]}
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
-            Object {
+            {
               "border": "none",
               "bottom": 0,
               "boxSizing": "border-box",
@@ -111,7 +111,7 @@ Array [
             src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
             srcSet="/_next/image?url=%2Ffavicon-48x48.png&w=32&q=75 1x, /_next/image?url=%2Ffavicon-48x48.png&w=64&q=75 2x"
             style={
-              Object {
+              {
                 "border": "none",
                 "bottom": 0,
                 "boxSizing": "border-box",
