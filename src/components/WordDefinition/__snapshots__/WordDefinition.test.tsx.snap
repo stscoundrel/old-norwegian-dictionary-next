@@ -23,6 +23,10 @@ exports[`WordDefinition component Matches snapshot 1`] = `
         þrályndi
         "
       </em>
+       in Norwegian.
+    </p>
+    <p>
+      As defined by the Johan Fritzer's Old Norwegian dictionary:
     </p>
   </header>
   <dl
