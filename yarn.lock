@@ -3352,6 +3352,11 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
+futhork@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/futhork/-/futhork-1.1.8.tgz#647f9dba616d8a668f7b190389a9bce97e1be7aa"
+  integrity sha512-7oKZ2G9H1tutrV3kJx14E8Ac0HvpgDcFV8ue8bicEUzJJrrjKtR4rbiHaYoyNttmkRISk1Po6qXX1QlIRbco2w==
+
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
@@ -6506,8 +6511,3 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-
-younger-futhark@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/younger-futhark/-/younger-futhark-1.2.3.tgz#d7e6337ec34b29efd67b12f67b4a4f4540e839dc"
-  integrity sha512-WVol/0UP5bpzNEjRBjaJAxraqLt5y5QkN4D4cU7X1CYAdnK7kwu67h8ekqyceom6vfBs0HCyjcH468H1JJP94Q==

@@ -1,5 +1,5 @@
 import { capitalize } from 'lib/utils/strings'
-import { lettersToShortTwigRunes } from 'younger-futhark'
+import { lettersToRunes } from 'futhork'
 import { Abbreviation, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import { DictionaryEntry } from 'lib/models/dictionary'
 import Abbreviations from 'components/Abbreviations'
@@ -38,8 +38,8 @@ export default function WordDefinition({ data, abbreviations }: WordDefinitionPr
 
       <p><strong>Part of speech:</strong> <em>{partOfSpeech}</em></p>
 
-      <p>Possible runic inscription in <em>Younger Futhark:</em>
-        <span className={styles.rune}>{ lettersToShortTwigRunes(word) }</span>
+      <p>Possible runic inscription in <em>Medieval Futhork:</em>
+        <span className={styles.rune}>{ lettersToRunes(word) }</span>
       </p>
 
       <Abbreviations abbreviations={abbreviations} />

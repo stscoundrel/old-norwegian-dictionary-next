@@ -59,12 +59,12 @@ exports[`WordDefinition component Matches snapshot 1`] = `
   <p>
     Possible runic inscription in 
     <em>
-      Younger Futhark:
+      Medieval Futhork:
     </em>
     <span
       className="rune"
     >
-      ᚦᚱᛆᛚᚢᚿᛐᛁ
+      ᚦᚱᛆᛚᛦᚿᚦᛁ
     </span>
   </p>
   <div
