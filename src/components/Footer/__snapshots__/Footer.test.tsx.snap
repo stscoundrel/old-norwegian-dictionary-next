@@ -26,9 +26,22 @@ exports[`Footer component Matches snapshot 1`] = `
     <section
       className="section"
     >
-      <h3>
+      <h4>
+        Old Norwegian language
+      </h4>
+      <p>
+        Old Norwegian is a early form of Norwegian language that was used from 11th to 14th century. It developed from Old West Norse.
+      </p>
+      <p>
+        Also known as "Norwegian Norse", or "gammelnorsk" in modern Norwegian
+      </p>
+    </section>
+    <section
+      className="section"
+    >
+      <h4>
         Old Norse language
-      </h3>
+      </h4>
       <p>
         Old Norse was a North Germanic language that was spoken by inhabitants of Scandinavia and their overseas settlements from about the 7th to the 15th centuries.
       </p>
