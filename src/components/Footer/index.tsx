@@ -26,7 +26,19 @@ export default function Footer({ letters }: FooterProps) {
         </ContentArea>
 
         <ContentArea>
-          <h3>Old Norse language</h3>
+          <h4>Old Norwegian language</h4>
+          <p>Old Norwegian is a early form of Norwegian language
+            that was used from 11th to 14th century. It developed from
+            Old West Norse.
+          </p>
+
+          <p>Also known as &quot;Norwegian Norse&quot;,
+            or &quot;gammelnorsk&quot; in modern Norwegian
+          </p>
+        </ContentArea>
+
+        <ContentArea>
+          <h4>Old Norse language</h4>
           <p>Old Norse was a North Germanic language that was spoken by inhabitants of
           Scandinavia and their overseas settlements from about the 7th to the 15th centuries.</p>
 
