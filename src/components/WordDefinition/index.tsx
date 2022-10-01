@@ -21,7 +21,8 @@ export default function WordDefinition({ data, abbreviations }: WordDefinitionPr
         <small className={styles.subHeading}>
           Old Norwegian Dictionary - {word.toLowerCase()}
         </small>
-        <p>Meaning of Old Norwegian word <em>&quot;{word}&quot;</em></p>
+        <p>Meaning of Old Norwegian word <em>&quot;{word}&quot;</em> in Norwegian.</p>
+        <p>As defined by the Johan Fritzer&apos;s Old Norwegian dictionary:</p>
       </header>
 
       <dl className={styles.definitionList}>
