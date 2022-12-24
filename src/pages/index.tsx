@@ -38,9 +38,20 @@ export default function Index({ letters }: IndexProps) {
       </ContentArea>
 
       <ContentArea>
+        <h2 className="h3">What is Old Norwegian?</h2>
+        <p>
+        Old Norwegian was a language spoken in Norway in the 11th and 14th century.
+        It is a transitional stage between Old West Norse and Middle Norwegian,
+        coming at the end of the Viking Age.
+        </p>
+
+        <p>Old Norwegian is known as gammelnorsk in modern Norwegian.</p>
+      </ContentArea>
+
+      <ContentArea>
         <h2 className="h3">Written language of the dictionary</h2>
         <p>The dictionary volumes were published between 1862 and 1896.
-          This predates current written standars of Norwegian, namely Bokmål and Nynorsk.
+          This predates current written standards of Norwegian, namely Bokmål and Nynorsk.
         </p>
 
         <p>Therefore, the written definitions may seem old fashioned or more dano-norwegian
