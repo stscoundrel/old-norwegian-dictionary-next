@@ -77,6 +77,12 @@ export default function Footer({ letters }: FooterProps) {
             <ul>
               <li>
                 <ExternalLink
+                  title="K.F Söderwall's Old Swedish Dictionary"
+                  href="https://old-swedish-dictionary.vercel.app/"
+                />
+              </li>
+              <li>
+                <ExternalLink
                   title="Cleasby and Vigfusson Old Norse Dictionary"
                   href="https://cleasby-vigfusson-dictionary.vercel.app/"
                 />
@@ -84,7 +90,7 @@ export default function Footer({ letters }: FooterProps) {
               <li>
                 <ExternalLink
                   title="A Concise Dictionary of Old Icelandic"
-                  href="old-icelandic.vercel.app/"
+                  href="https://old-icelandic.vercel.app/"
                 />
               </li>
               <li>

@@ -781,6 +781,15 @@ exports[`Search page: render Matches snapshot 1`] = `
           <ul>
             <li>
               <a
+                href="https://old-swedish-dictionary.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                K.F Söderwall's Old Swedish Dictionary
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://cleasby-vigfusson-dictionary.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -790,7 +799,7 @@ exports[`Search page: render Matches snapshot 1`] = `
             </li>
             <li>
               <a
-                href="old-icelandic.vercel.app/"
+                href="https://old-icelandic.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
