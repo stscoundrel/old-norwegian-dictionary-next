@@ -1,5 +1,6 @@
 import { getDictionary } from 'old-norwegian-dictionary'
 import { VALID_AS_FIRST } from 'old-norse-alphabet'
+import { oldNorseSort } from 'old-norse-alphabet-sort'
 import { slugifyWord, slugifyLetter } from '../utils/slugs'
 import { OriginalDictionaryEntry, DictionaryEntry } from '../models/dictionary'
 
@@ -50,8 +51,10 @@ export const getAllWords = (): DictionaryEntry[] => {
 
 export const getByLetter = (letter: string): DictionaryEntry[] => {
   const words = getAllWords()
-  const byLetter = words.filter((entry) => (
-    entry.word.charAt(0).toLowerCase() === letter.toLowerCase()))
+  const byLetter = words
+    .filter((entry) => (
+      entry.word.charAt(0).toLowerCase() === letter.toLowerCase()))
+    .sort((a, b) => oldNorseSort(a.word, b.word))
 
   return byLetter
 }

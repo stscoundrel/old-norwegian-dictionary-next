@@ -29,6 +29,7 @@
     "next": "^12.3.1",
     "next-pwa": "^5.6.0",
     "old-norse-alphabet": "^1.2.3",
+    "old-norse-alphabet-sort": "^1.1.11",
     "old-norwegian-dictionary": "^1.0.4",
     "old-norwegian-dictionary-abbreviations": "^1.0.5",
     "react": "^18.2.0",
