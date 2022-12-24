@@ -32,8 +32,8 @@ export default function Index({ letters }: IndexProps) {
         <p>The dictionary contains over 40 000 translations
           from Old Norwegian/Norse to Norwegian. This is the largest dictionary of the language.</p>
 
-        <Link href="/search">
-         <a className="button">Search the dictionary</a>
+        <Link href="/search" className="button">
+         Search the dictionary
         </Link>
       </ContentArea>
 
