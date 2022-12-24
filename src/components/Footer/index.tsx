@@ -69,6 +69,12 @@ export default function Footer({ letters }: FooterProps) {
                   href="https://github.com/stscoundrel/old-norwegian-dictionary-abbreviations"
                 />
               </li>
+              <li>
+                <ExternalLink
+                  title="Medieval Futhork Runes"
+                  href="https://github.com/stscoundrel/futhork"
+                />
+              </li>
             </ul>
           </nav>
 

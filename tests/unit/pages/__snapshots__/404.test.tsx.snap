@@ -720,6 +720,15 @@ exports[`404 page page Matches snapshot 1`] = `
                 Abbreviations
               </a>
             </li>
+            <li>
+              <a
+                href="https://github.com/stscoundrel/futhork"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Medieval Futhork Runes
+              </a>
+            </li>
           </ul>
         </nav>
         <nav
