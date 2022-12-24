@@ -69,12 +69,24 @@ export default function Footer({ letters }: FooterProps) {
                   href="https://github.com/stscoundrel/old-norwegian-dictionary-abbreviations"
                 />
               </li>
+              <li>
+                <ExternalLink
+                  title="Medieval Futhork Runes"
+                  href="https://github.com/stscoundrel/futhork"
+                />
+              </li>
             </ul>
           </nav>
 
           <nav className={styles.nav}>
             <h4 className={styles.navTitle}>Related dictionary projects</h4>
             <ul>
+              <li>
+                <ExternalLink
+                  title="K.F Söderwall's Old Swedish Dictionary"
+                  href="https://old-swedish-dictionary.vercel.app/"
+                />
+              </li>
               <li>
                 <ExternalLink
                   title="Cleasby and Vigfusson Old Norse Dictionary"
@@ -84,7 +96,7 @@ export default function Footer({ letters }: FooterProps) {
               <li>
                 <ExternalLink
                   title="A Concise Dictionary of Old Icelandic"
-                  href="old-icelandic.vercel.app/"
+                  href="https://old-icelandic.vercel.app/"
                 />
               </li>
               <li>

@@ -10,8 +10,8 @@ interface WordLinkPros{
 
 export default function WordLink({ data: { slug, word } }: WordLinkPros) {
   return (
-   <Link key={`link${slug}`} href={`/word/${slug}`}>
-      <a className={styles.link}>{word.toLowerCase()}</a>
+   <Link key={`link${slug}`} href={`/word/${slug}`} className={styles.link}>
+      {word.toLowerCase()}
     </Link>
   )
 }

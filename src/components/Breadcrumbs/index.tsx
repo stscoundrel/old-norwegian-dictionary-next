@@ -45,8 +45,8 @@ export default function Breadcrumbs({ type, content }: BreadcrumbProps) {
     <nav className={styles.section}>
       <div className="container">
         {breadcrumbs.map(({ label, url }) => (
-          <Link key={url} href={url}>
-            <a className={styles.link}>{label}</a>
+          <Link key={url} href={url} className={styles.link}>
+            {label}
           </Link>
         ))}
 

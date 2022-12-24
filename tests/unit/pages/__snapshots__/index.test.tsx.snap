@@ -12,130 +12,30 @@ exports[`Index page Matches snapshot 1`] = `
       <div
         className="topbar container"
       >
-        <span
-          style={
-            {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": "initial",
-            }
-          }
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <span
-            style={
-              {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "padding": 0,
-                "width": "initial",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e"
-              style={
-                {
-                  "background": "none",
-                  "border": 0,
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            />
-          </span>
           <img
             alt="To home"
-            data-nimg="intrinsic"
+            data-nimg="1"
             decoding="async"
-            href="/"
-            onClick={[Function]}
+            height={30}
+            loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
+            srcSet="/_next/image?url=%2Ffavicon-48x48.png&w=32&q=75 1x, /_next/image?url=%2Ffavicon-48x48.png&w=64&q=75 2x"
             style={
               {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
+                "color": "transparent",
               }
             }
+            width={30}
           />
-          <noscript>
-            <img
-              alt="To home"
-              data-nimg="intrinsic"
-              decoding="async"
-              href="/"
-              loading="lazy"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-              src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
-              srcSet="/_next/image?url=%2Ffavicon-48x48.png&w=32&q=75 1x, /_next/image?url=%2Ffavicon-48x48.png&w=64&q=75 2x"
-              style={
-                {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </span>
+        </a>
         <div
           aria-label="Open menu"
           className="hamburger"
@@ -648,10 +548,25 @@ exports[`Index page Matches snapshot 1`] = `
       <h2
         className="h3"
       >
+        What is Old Norwegian?
+      </h2>
+      <p>
+        Old Norwegian was a language spoken in Norway in the 11th and 14th century. It is a transitional stage between Old West Norse and Middle Norwegian, coming at the end of the Viking Age.
+      </p>
+      <p>
+        Old Norwegian is known as gammelnorsk in modern Norwegian.
+      </p>
+    </section>
+    <section
+      className="section"
+    >
+      <h2
+        className="h3"
+      >
         Written language of the dictionary
       </h2>
       <p>
-        The dictionary volumes were published between 1862 and 1896. This predates current written standars of Norwegian, namely Bokmål and Nynorsk.
+        The dictionary volumes were published between 1862 and 1896. This predates current written standards of Norwegian, namely Bokmål and Nynorsk.
       </p>
       <p>
         Therefore, the written definitions may seem old fashioned or more dano-norwegian than one would expect. The writing system used is probably Riksmål.
@@ -753,6 +668,15 @@ exports[`Index page Matches snapshot 1`] = `
                 Abbreviations
               </a>
             </li>
+            <li>
+              <a
+                href="https://github.com/stscoundrel/futhork"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Medieval Futhork Runes
+              </a>
+            </li>
           </ul>
         </nav>
         <nav
@@ -766,6 +690,15 @@ exports[`Index page Matches snapshot 1`] = `
           <ul>
             <li>
               <a
+                href="https://old-swedish-dictionary.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                K.F Söderwall's Old Swedish Dictionary
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://cleasby-vigfusson-dictionary.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -775,7 +708,7 @@ exports[`Index page Matches snapshot 1`] = `
             </li>
             <li>
               <a
-                href="old-icelandic.vercel.app/"
+                href="https://old-icelandic.vercel.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
