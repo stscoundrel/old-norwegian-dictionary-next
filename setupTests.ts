@@ -1,5 +1,5 @@
 // Force certain date to keep tests deterministic.
-jest.useFakeTimers('modern');
+jest.useFakeTimers();
 jest.setSystemTime(new Date(2021, 1, 1, 1, 1, 1, 1));
 
 
@@ -13,3 +13,5 @@ jest.mock('next/router', () => ({
     }
   },
 }))
+
+export {}
