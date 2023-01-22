@@ -66,6 +66,14 @@ exports[`WordDefinition component Matches snapshot 1`] = `
     >
       ᚦᚱᛆᛚᛦᚿᚦᛁ
     </span>
+    <br />
+    <small>
+      Medieval Runes were used in Norway from 11th to 15th centuries.
+    </small>
+    <br />
+    <small>
+      Futhork was a continuation of earlier Younger Futhark runes, which were used to write Old Norse.
+    </small>
   </p>
   <div
     className="abbreviations"
