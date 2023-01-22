@@ -39,7 +39,12 @@ export default function WordDefinition({ data, abbreviations }: WordDefinitionPr
       <p><strong>Part of speech:</strong> <em>{partOfSpeech}</em></p>
 
       <p>Possible runic inscription in <em>Medieval Futhork:</em>
-        <span className={styles.rune}>{ lettersToRunes(word) }</span>
+        <span className={styles.rune}>{ lettersToRunes(word) }</span><br />
+        <small>Medieval Runes were used in Norway from 11th to 15th centuries.</small><br />
+        <small>
+          Futhork was a continuation of earlier Younger Futhark runes,
+          which were used to write Old Norse.
+        </small>
       </p>
 
       <Abbreviations abbreviations={abbreviations} />
