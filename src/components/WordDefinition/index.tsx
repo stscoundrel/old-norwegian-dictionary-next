@@ -3,14 +3,17 @@ import { lettersToRunes } from 'futhork'
 import { Abbreviation, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import { DictionaryEntry } from 'lib/models/dictionary'
 import Abbreviations from 'components/Abbreviations'
+import { Crosslink } from 'scandinavian-dictionary-crosslinker'
+import Crosslinks from 'components/Crosslinks'
 import styles from './WordDefinition.module.scss'
 
 interface WordDefinitionProps{
   data: DictionaryEntry,
-  abbreviations: Abbreviation[]
+  abbreviations: Abbreviation[],
+  crosslinks: Crosslink[],
 }
 
-export default function WordDefinition({ data, abbreviations }: WordDefinitionProps) {
+export default function WordDefinition({ data, abbreviations, crosslinks }: WordDefinitionProps) {
   const { word, partOfSpeech, definition } = data
 
   return (
@@ -43,6 +46,8 @@ export default function WordDefinition({ data, abbreviations }: WordDefinitionPr
       </p>
 
       <Abbreviations abbreviations={abbreviations} />
+      <br />
+      <Crosslinks crosslinks={crosslinks} />
     </article>
   )
 }
