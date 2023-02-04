@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import Word, { getStaticProps, getStaticPaths } from 'pages/word/[word]'
 import renderer from 'react-test-renderer'
 import { getAlphabet } from 'lib/services/dictionary'
+import { DictionarySource } from 'scandinavian-dictionary-crosslinker'
 
 const mockHandler = jest.fn()
 
@@ -42,31 +43,62 @@ describe('Word page: render & usage', () => {
     },
   ]
 
+  const crosslinks = [
+    {
+      url: 'https://old-icelandic.vercel.app/word/fadir',
+      source: DictionarySource.OldIcelandic,
+    },
+    {
+      url: 'https://old-swedish-dictionary.vercel.app/word/fadhir',
+      source: DictionarySource.OldSwedish,
+    },
+  ]
+
   test('Does not crash', () => {
     const div = document.createElement('div')
     const root = ReactDOM.createRoot(div)
     root.render(
-      <Word entry={word} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={word}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     )
   })
 
   test('Matches snapshot', () => {
     const tree = renderer.create(
-      <Word entry={word} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={word}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     ).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   test('Returns null if entry is unavailable', () => {
     const tree = renderer.create(
-      <Word entry={null} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={null}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     ).toJSON()
     expect(tree).toBeNull()
   })
 
   test('Back button works', async () => {
     const tree = renderer.create(
-      <Word entry={word} letters={getAlphabet()} abbreviations={abbreviations} />,
+      <Word
+        entry={word}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     )
 
     // Click back btn.
@@ -112,6 +144,7 @@ describe('Word page: data fetching', () => {
             explanation: 'substantiv.',
           },
         ],
+        crosslinks: [],
         letters: getAlphabet(),
       },
     }

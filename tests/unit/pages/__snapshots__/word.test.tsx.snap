@@ -597,6 +597,14 @@ exports[`Word page: render & usage Matches snapshot 1`] = `
         >
           ᚦᚱᛆᛚᛦᚿᚦᛁ
         </span>
+        <br />
+        <small>
+          Medieval Runes were used in Norway from 11th to 15th centuries.
+        </small>
+        <br />
+        <small>
+          Futhork was a continuation of earlier Younger Futhark runes, which were used to write Old Norse.
+        </small>
       </p>
       <div
         className="abbreviations"
@@ -657,6 +665,39 @@ exports[`Word page: render & usage Matches snapshot 1`] = `
           </dl>
         </div>
       </div>
+      <br />
+      <h4>
+        Also available in related dictionaries:
+      </h4>
+      <p>
+        This headword also appears in dictionaries of other languages related to Old Norwegian.
+      </p>
+      <ul
+        className="list"
+      >
+        <li
+          className="listItem"
+        >
+          <a
+            href="https://old-icelandic.vercel.app/word/fadir"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Old Icelandic - Geir Zoëga's Dictionary
+          </a>
+        </li>
+        <li
+          className="listItem"
+        >
+          <a
+            href="https://old-swedish-dictionary.vercel.app/word/fadhir"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Old Swedish - K.F Söderwall's Dictionary
+          </a>
+        </li>
+      </ul>
     </article>
     <a
       className="button"

@@ -3,14 +3,17 @@ import { lettersToRunes } from 'futhork'
 import { Abbreviation, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import { DictionaryEntry } from 'lib/models/dictionary'
 import Abbreviations from 'components/Abbreviations'
+import { Crosslink } from 'scandinavian-dictionary-crosslinker'
+import Crosslinks from 'components/Crosslinks'
 import styles from './WordDefinition.module.scss'
 
 interface WordDefinitionProps{
   data: DictionaryEntry,
-  abbreviations: Abbreviation[]
+  abbreviations: Abbreviation[],
+  crosslinks: Crosslink[],
 }
 
-export default function WordDefinition({ data, abbreviations }: WordDefinitionProps) {
+export default function WordDefinition({ data, abbreviations, crosslinks }: WordDefinitionProps) {
   const { word, partOfSpeech, definition } = data
 
   return (
@@ -39,10 +42,17 @@ export default function WordDefinition({ data, abbreviations }: WordDefinitionPr
       <p><strong>Part of speech:</strong> <em>{partOfSpeech}</em></p>
 
       <p>Possible runic inscription in <em>Medieval Futhork:</em>
-        <span className={styles.rune}>{ lettersToRunes(word) }</span>
+        <span className={styles.rune}>{ lettersToRunes(word) }</span><br />
+        <small>Medieval Runes were used in Norway from 11th to 15th centuries.</small><br />
+        <small>
+          Futhork was a continuation of earlier Younger Futhark runes,
+          which were used to write Old Norse.
+        </small>
       </p>
 
       <Abbreviations abbreviations={abbreviations} />
+      <br />
+      <Crosslinks crosslinks={crosslinks} />
     </article>
   )
 }

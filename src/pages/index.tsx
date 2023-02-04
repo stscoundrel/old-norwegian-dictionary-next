@@ -6,6 +6,7 @@ import Layout from 'components/Layout'
 import ContentArea from 'components/ContentArea'
 import Link from 'next/link'
 import { ContentType } from 'lib/models/content-types'
+import ExternalLink from 'components/ExternalLink'
 
 interface IndexProps{
   letters: AlphabetLetter[]
@@ -43,6 +44,11 @@ export default function Index({ letters }: IndexProps) {
         Old Norwegian was a language spoken in Norway in the 11th and 14th century.
         It is a transitional stage between Old West Norse and Middle Norwegian,
         coming at the end of the Viking Age.
+        </p>
+
+        <p>
+         It is closely related to <ExternalLink href="https://old-icelandic.vercel.app/" title="Old Icelandic" />,
+        a sister language in Old West Norse branch.
         </p>
 
         <p>Old Norwegian is known as gammelnorsk in modern Norwegian.</p>
