@@ -10,6 +10,13 @@ const word = {
   slug: 'thralyndi',
 }
 
+const wordWithOlderSpelling = {
+  word: 'völlr',
+  partOfSpeech: 'm',
+  definition: 'völlr, m. (Gen. vallar, n. Pl. vellir, A. Pl.völlu) fast og jevn Jordvold',
+  slug: 'vollr',
+}
+
 const abbreviations = [
   {
     abbreviation: 'n.',
@@ -42,6 +49,17 @@ describe('WordDefinition component', () => {
   test('Matches snapshot', () => {
     const tree = renderer.create(
       <WordDefinition data={word} abbreviations={abbreviations} crosslinks={crosslinks} />,
+    ).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  test('Matches snapshot (older spelling variant)', () => {
+    const tree = renderer.create(
+      <WordDefinition
+        data={wordWithOlderSpelling}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+      />,
     ).toJSON()
     expect(tree).toMatchSnapshot()
   })
