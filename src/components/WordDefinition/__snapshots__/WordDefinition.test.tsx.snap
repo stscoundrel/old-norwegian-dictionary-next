@@ -1,5 +1,190 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`WordDefinition component Matches snapshot (older spelling variant) 1`] = `
+<article
+  className="section"
+>
+  <header>
+    <h1
+      lang="non"
+    >
+      Völlr
+    </h1>
+    <small
+      className="subHeading"
+    >
+      Old Norwegian Dictionary - 
+      völlr
+    </small>
+    <p>
+      Meaning of Old Norwegian word 
+      <em>
+        "
+        völlr
+        "
+      </em>
+       (or 
+      <em>
+        vǫllr
+      </em>
+      )
+       in Norwegian.
+    </p>
+    <p>
+      As defined by the Johan Fritzer's Old Norwegian dictionary:
+    </p>
+  </header>
+  <dl
+    className="definitionList"
+  >
+    <dt>
+      <strong>
+        völlr
+      </strong>
+       
+      (
+      vǫllr
+      )
+    </dt>
+    <dd
+      className="itemDescription"
+      dangerouslySetInnerHTML={
+        {
+          "__html": "völlr, m. (Ge<abbr title="Neutrum.">n.</abbr> vallar, <abbr title="Neutrum.">n.</abbr> Pl. vellir, A. Pl.völlu) fast og jevn Jordvold",
+        }
+      }
+      lang="nor"
+    />
+  </dl>
+  <p>
+    <strong>
+      Part of speech:
+    </strong>
+     
+    <em>
+      m
+    </em>
+  </p>
+  <p>
+    <strong>
+      Orthography: 
+    </strong>
+    Johan Fritzner's dictionary used the letter 
+    <em>
+      ö 
+    </em>
+    to represent the original Old Norwegian (or Old Norse) vowel 
+    <em>
+      ǫ
+    </em>
+    . Therefore, 
+    <em>
+      völlr
+    </em>
+     may be more accurately written as 
+    <em>
+      vǫllr
+    </em>
+    .
+  </p>
+  <p>
+    Possible runic inscription in 
+    <em>
+      Medieval Futhork:
+    </em>
+    <span
+      className="rune"
+    >
+      ᚠᚯᛚᛚᚱ
+    </span>
+    <br />
+    <small>
+      Medieval Runes were used in Norway from 11th to 15th centuries.
+    </small>
+    <br />
+    <small>
+      Futhork was a continuation of earlier Younger Futhark runes, which were used to write Old Norse.
+    </small>
+  </p>
+  <div
+    className="abbreviations"
+  >
+    <div
+      className="column"
+    >
+      <h4>
+        Abbreviations used:
+      </h4>
+      <dl
+        className="wrap"
+      >
+        <dt
+          className="abbreviation"
+        >
+          <strong>
+            n.
+          </strong>
+        </dt>
+        <dd
+          className="explanation"
+        >
+          Neutrum.
+        </dd>
+      </dl>
+      <dl
+        className="wrap"
+      >
+        <dt
+          className="abbreviation"
+        >
+          <strong>
+            s.
+          </strong>
+        </dt>
+        <dd
+          className="explanation"
+        >
+          substantiv.
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <br />
+  <h4>
+    Also available in related dictionaries:
+  </h4>
+  <p>
+    This headword also appears in dictionaries of other languages related to Old Norwegian.
+  </p>
+  <ul
+    className="list"
+  >
+    <li
+      className="listItem"
+    >
+      <a
+        href="https://old-icelandic.vercel.app/word/fadir"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Old Icelandic - Geir Zoëga's Dictionary
+      </a>
+    </li>
+    <li
+      className="listItem"
+    >
+      <a
+        href="https://old-swedish-dictionary.vercel.app/word/fadhir"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Old Swedish - K.F Söderwall's Dictionary
+      </a>
+    </li>
+  </ul>
+</article>
+`;
+
 exports[`WordDefinition component Matches snapshot 1`] = `
 <article
   className="section"
@@ -36,6 +221,7 @@ exports[`WordDefinition component Matches snapshot 1`] = `
       <strong>
         þrályndi
       </strong>
+       
     </dt>
     <dd
       className="itemDescription"
