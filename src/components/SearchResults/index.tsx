@@ -9,7 +9,7 @@ interface SearchResultsProps{
 export default function SearchResults({ words }: SearchResultsProps) {
   return (
     <>
-      <p className="blue">{words.length} results found</p>
+      <p className="blue">{words.length}{words.length === 150 && '+'} results found</p>
       <ul className={styles.list}>
         { words.map((word) => (
           <li key={word.slug}>

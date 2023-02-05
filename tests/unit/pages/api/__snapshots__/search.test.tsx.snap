@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search API endpoint Should return search results 1`] = `
+[
+  {
+    "definition": "attönn, f. Hugtand, = vígtönn. Fld. I,366.",
+    "foundIn": [
+      "In headword: attönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "attonn",
+    "word": "attönn",
+  },
+  {
+    "definition": "blátönn, f. blaa, sort Tand; som Øge-navn: elzt barna þeirra var Björn b.,tönn hans var blá at lit ok stóð halfrarannarrar alnar fram ur munni hansFld. II, 390; jvf Landn. 4, 8 (259);Haraldr blátönn Flat. I, 1722.",
+    "foundIn": [
+      "In headword: blátönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "blatonn",
+    "word": "blátönn",
+  },
+  {
+    "definition": "fílstönn, f. = fílsbein. Mar. 235. 72628.",
+    "foundIn": [
+      "In headword: fílstönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "filstonn",
+    "word": "fílstönn",
+  },
+  {
+    "definition": "framtönn, f. Fortand. Landsl. 4, 153.",
+    "foundIn": [
+      "In headword: framtönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "framtonn",
+    "word": "framtönn",
+  },
+  {
+    "definition": "gulltönn, f. Guldtand; som Øgenavn; Halfdan g. Fris. 299 (Yngl. 40).",
+    "foundIn": [
+      "In headword: gulltönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "gulltonn",
+    "word": "gulltönn",
+  },
+  {
+    "definition": "hesttönn, f. Hestetand. Vígl. 5819.",
+    "foundIn": [
+      "In headword: hesttönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "hesttonn",
+    "word": "hesttönn",
+  },
+  {
+    "definition": "kuldatönn, f. kold Tand; fjúk ok frostgékk alla nóttina, gó elrishundr allaþá nótt óþrotnum kjöptum ok töggallar jarðir með grimmum kuldatönn-um Fbr. 1420 (Flat. II, 991).",
+    "foundIn": [
+      "In headword: kuldatönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "kuldatonn",
+    "word": "kuldatönn",
+  },
+  {
+    "definition": "matönnungr, m. Person som gjør, kan gjøresaa meget Arbeide, at han derved for-tjener, gjør Ret for sin Føde, = mat-annungr, (jvf önnungr SE. I, 53213).NL. IV, 13228.",
+    "foundIn": [
+      "In headword: matönnungr",
+    ],
+    "partOfSpeech": "m",
+    "slug": "matonnungr",
+    "word": "matönnungr",
+  },
+  {
+    "definition": "náhvalstönn, f. Narhvalstand. Bp. I, 76726.",
+    "foundIn": [
+      "In headword: náhvalstönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "nahvalstonn",
+    "word": "náhvalstönn",
+  },
+  {
+    "definition": "öfundartönn, f. Misundelsens, Hadets Tand;bíta e-n með öfundartönn Stat. 23822.",
+    "foundIn": [
+      "In headword: öfundartönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "ofundartonn",
+    "word": "öfundartönn",
+  },
+  {
+    "definition": "ormstönn, f. Ormetand, Slangetand; hvárkivar hann (nl. hjalmrinn) af járni gerrné stáli, af gulli né silfri, heldr varhann gerr af hörðum ormstönnum Klm.46115.",
+    "foundIn": [
+      "In headword: ormstönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "ormstonn",
+    "word": "ormstönn",
+  },
+  {
+    "definition": "smátönn, f. liden Tand; hann (nl. rost-ungr) hefir tennr tvær stórar ok langarumfram aðrar smátennr Kgs. 4123.",
+    "foundIn": [
+      "In headword: smátönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "smatonn",
+    "word": "smátönn",
+  },
+  {
+    "definition": "tönn, f. (G. tannar, N. Pl. tenn, tennr) 1)  Tand; galti gœddi þá ferðina oklagði upp ranann ok tennrnar á söðul-treyju konungs Flat. II, 2717; hafa þeirhvalir tennr eigi stœrri en gera mámjök stór knífshefti af eða tafl Kgs.3013. 312; mæla e-t innan tanna dvs. vedsig selv, saa at det ikke høres, Str. 812;rjóða tönn á e-m dvs. have fat paa enog tilføie ham Skade, Flat. II, 364; vurðuþegar heilir, er þat (nl. viðsmjörit) kominnan tanna þeim, hvat er áðr var atmeini Heilag. II, 4404; sér þessi samibróðir - einn helvítisanda niðr stíg-anda yfir þenna einsetumann hafandiþrennar tenn eldligar Heilag. II, 63236;Erlingr sá til hans ok glotti við tönnOH. 11425; ekki tjá tanna Bær. 10821,Klm. 3821, se under tjá; þegar er Ranifinnr honum tönn, þá gaf hann honumbeltit (jvf tannfé) OHm. 4 (41).  2) Hvalrostand; grafa tönn Bp. I, 14333;ofléttubuðkr með tönn Kalfsk. 84; omHvalrostand som Handelsvare coll. Krók.2010.",
+    "foundIn": [
+      "In headword: tönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "tonn",
+    "word": "tönn",
+  },
+  {
+    "definition": "tónn, m. musikalsk Node; syngja tíðir viðtón dvs. efter Noder, Sturl. II, 18314.",
+    "foundIn": [
+      "In headword: tónn",
+    ],
+    "partOfSpeech": "m",
+    "slug": "tonn-2",
+    "word": "tónn",
+  },
+  {
+    "definition": "vígtönn, f. Hugtand. Fld. I, 214. II, 244.III, 231; om Menneskets Øientand: Frost.4, 45.",
+    "foundIn": [
+      "In headword: vígtönn",
+    ],
+    "partOfSpeech": "f",
+    "slug": "vigtonn",
+    "word": "vígtönn",
+  },
+]
+`;
