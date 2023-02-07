@@ -6,7 +6,7 @@ export interface SearchResult extends DictionaryEntry{
     foundIn: string[],
 }
 
-type Criteria = 'headword' | 'definition'
+export type Criteria = 'headword' | 'definition'
 
 const formatResults = (results, search, criteria): SearchResult[] => {
   const formattedResults = results.map((result) => {

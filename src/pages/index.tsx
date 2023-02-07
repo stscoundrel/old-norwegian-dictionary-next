@@ -7,6 +7,7 @@ import ContentArea from 'components/ContentArea'
 import Link from 'next/link'
 import { ContentType } from 'lib/models/content-types'
 import ExternalLink from 'components/ExternalLink'
+import SampleText from 'components/SampleText'
 
 interface IndexProps{
   letters: AlphabetLetter[]
@@ -52,6 +53,8 @@ export default function Index({ letters }: IndexProps) {
         </p>
 
         <p>Old Norwegian is known as gammelnorsk in modern Norwegian.</p>
+
+        <SampleText />
       </ContentArea>
 
       <ContentArea>

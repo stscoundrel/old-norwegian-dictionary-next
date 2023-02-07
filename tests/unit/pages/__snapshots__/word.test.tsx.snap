@@ -567,6 +567,7 @@ exports[`Word page: render & usage Matches snapshot 1`] = `
           <strong>
             þrályndi
           </strong>
+           
         </dt>
         <dd
           className="itemDescription"

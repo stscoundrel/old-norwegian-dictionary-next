@@ -1,4 +1,4 @@
-import { capitalize } from 'lib/utils/strings'
+import { capitalize, getOlderSpelling } from 'lib/utils/strings'
 import { lettersToRunes } from 'futhork'
 import { Abbreviation, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import { DictionaryEntry } from 'lib/models/dictionary'
@@ -15,6 +15,8 @@ interface WordDefinitionProps{
 
 export default function WordDefinition({ data, abbreviations, crosslinks }: WordDefinitionProps) {
   const { word, partOfSpeech, definition } = data
+  const olderForm = getOlderSpelling(word)
+  const hasOlderForm = word !== olderForm
 
   return (
     <article className={styles.section}>
@@ -24,12 +26,13 @@ export default function WordDefinition({ data, abbreviations, crosslinks }: Word
         <small className={styles.subHeading}>
           Old Norwegian Dictionary - {word.toLowerCase()}
         </small>
-        <p>Meaning of Old Norwegian word <em>&quot;{word}&quot;</em> in Norwegian.</p>
+        <p>Meaning of Old Norwegian word <em>&quot;{word}&quot;</em>
+        {hasOlderForm && <> (or <em>{olderForm}</em>)</>} in Norwegian.</p>
         <p>As defined by the Johan Fritzer&apos;s Old Norwegian dictionary:</p>
       </header>
 
       <dl className={styles.definitionList}>
-        <dt><strong>{word}</strong></dt>
+        <dt><strong>{word}</strong> {hasOlderForm && <>({olderForm})</>}</dt>
         <dd
           lang="nor"
           className={styles.itemDescription}
@@ -40,6 +43,13 @@ export default function WordDefinition({ data, abbreviations, crosslinks }: Word
       </dl>
 
       <p><strong>Part of speech:</strong> <em>{partOfSpeech}</em></p>
+
+      {hasOlderForm
+        && <p>
+          <strong>Orthography: </strong>Johan Fritzner&apos;s dictionary used the letter <em>ö </em>
+          to represent the original Old Norwegian (or Old Norse) vowel <em>ǫ</em>.
+          Therefore, <em>{word}</em> may be more accurately written as <em>{olderForm}</em>.
+        </p>}
 
       <p>Possible runic inscription in <em>Medieval Futhork:</em>
         <span className={styles.rune}>{ lettersToRunes(word) }</span><br />

@@ -2,32 +2,27 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
 // Services.
-import { searchDictionary, SearchResult } from 'lib/services/search'
+import { Criteria, SearchResult } from 'lib/services/search'
 
 // Components.
 import LoadingSpinner from 'components/LoadingSpinner'
 import SearchResults from 'components/SearchResults'
 
-import { DictionaryEntry } from 'lib/models/dictionary'
 import styles from './SearchForm.module.scss'
 
-interface SearchFormProps{
-  words: DictionaryEntry[]
-}
-
-export default function SearchForm({ words }: SearchFormProps) {
+export default function SearchForm() {
   const router = useRouter()
   const [search, setSearch] = useState('')
   const [selectedCriteria, setSelectedCriteria] = useState('all')
   const [results, setResults] = useState<SearchResult[]>([])
   const [isLoading, setIsLoading] = useState(false)
 
-  const getCriteria = (value) => {
+  const getCriteria = (value): string => {
     if (!value || value === 'all') {
-      return ['headword', 'definition']
+      return 'headword,definitions'
     }
 
-    return [value]
+    return value
   }
 
   const changeCriteria = (e) => {
@@ -53,15 +48,28 @@ export default function SearchForm({ words }: SearchFormProps) {
 
   useEffect(() => {
     if (router.query.query) {
-      showSpinner()
-      setSearch(String(router.query.query))
-      setSelectedCriteria(String(router.query.criteria) ?? 'all')
+      const fetchSearchResults = async () => {
+        showSpinner()
+        setSearch(String(router.query.query))
+        setSelectedCriteria(String(router.query.criteria) ?? 'all')
 
-      const formattedCriteria = getCriteria(router.query.criteria)
-      setResults(searchDictionary(String(router.query.query), words, formattedCriteria))
-      hideSpinner()
+        const formattedCriteria = getCriteria(router.query.criteria)
+        const apiSearchResponse = await fetch(`/api/search?${new URLSearchParams({
+          search: String(router.query.query),
+          criteria: formattedCriteria,
+        })}`)
+        const apiSearchResult = await apiSearchResponse.json()
+
+        console.log(apiSearchResponse)
+        console.log(apiSearchResult)
+
+        setResults(apiSearchResult)
+        hideSpinner()
+      }
+
+      fetchSearchResults()
     }
-  }, [router.query, words])
+  }, [router.query])
 
   return (
     <>
