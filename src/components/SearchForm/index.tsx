@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
 // Services.
-import { Criteria, SearchResult } from 'lib/services/search'
+import { SearchResult } from 'lib/services/search'
 
 // Components.
 import LoadingSpinner from 'components/LoadingSpinner'
