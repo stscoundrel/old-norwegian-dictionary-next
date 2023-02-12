@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
 // Services.
-import { Criteria, SearchResult } from 'lib/services/search'
+import { SearchResult } from 'lib/services/search'
 
 // Components.
 import LoadingSpinner from 'components/LoadingSpinner'
@@ -51,7 +51,7 @@ export default function SearchForm() {
       const fetchSearchResults = async () => {
         showSpinner()
         setSearch(String(router.query.query))
-        setSelectedCriteria(String(router.query.criteria) ?? 'all')
+        setSelectedCriteria(router.query.criteria as string ?? 'all')
 
         const formattedCriteria = getCriteria(router.query.criteria)
         const apiSearchResponse = await fetch(`/api/search?${new URLSearchParams({
