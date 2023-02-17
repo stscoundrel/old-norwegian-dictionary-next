@@ -612,7 +612,7 @@ exports[`Index page Matches snapshot 1`] = `
           </a>
            
           <a
-            href="konungr"
+            href="/word/konungr"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -621,7 +621,7 @@ exports[`Index page Matches snapshot 1`] = `
           </a>
            
           <a
-            href="son"
+            href="/word/son"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -630,7 +630,7 @@ exports[`Index page Matches snapshot 1`] = `
           </a>
            Hakonar 
           <a
-            href="konungr"
+            href="/word/konungr"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -639,7 +639,7 @@ exports[`Index page Matches snapshot 1`] = `
           </a>
            
           <a
-            href="sonarsonr"
+            href="/word/sonarsonr"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -648,7 +648,7 @@ exports[`Index page Matches snapshot 1`] = `
           </a>
            Suerris 
           <a
-            href="konungr"
+            href="/word/konungr"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
