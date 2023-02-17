@@ -574,7 +574,223 @@ exports[`Index page Matches snapshot 1`] = `
       </p>
       <p>
         <em>
-          Magnus með guðs miskun noregs konungr son Hakonar konungs sonar son Suerris konungs sender ollum gudes vínum ok sínum j frosto þings logum. Qveðju Guðs ok sina Þer vitið at hínír skynsamozsto menn af frosto þings logum hafa iðurlega getet firir oss at þer hafet spurt at ver hofum lut i at t bøta nokot um flæstar logbøkr.
+          Magnus 
+          <a
+            href="/word/med"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            með
+          </a>
+           
+          <a
+            href="/word/gud"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            guðs
+          </a>
+           
+          <a
+            href="/word/miskunn"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            miskun
+          </a>
+           
+          <a
+            href="/word/noregr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            noregs
+          </a>
+           
+          <a
+            href="konungr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            konungr
+          </a>
+           
+          <a
+            href="son"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            son
+          </a>
+           Hakonar 
+          <a
+            href="konungr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            konungs
+          </a>
+           
+          <a
+            href="sonarsonr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            sonar son
+          </a>
+           Suerris 
+          <a
+            href="konungr"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            konungs
+          </a>
+           
+          <a
+            href="/word/senda"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            sender
+          </a>
+           ollum gudes vínum ok sínum j frosto 
+          <a
+            href="/word/thing"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            þings
+          </a>
+           
+          <a
+            href="/word/log"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            logum
+          </a>
+          .
+          <a
+            href="/word/kvedja"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Qveðju
+          </a>
+           
+          <a
+            href="/word/gud"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Guðs
+          </a>
+           
+          <a
+            href="/word/ok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            ok
+          </a>
+           
+          <a
+            href="/word/sina"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            sina
+          </a>
+           Þer 
+          <a
+            href="/word/vita"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            vitið
+          </a>
+           at hínír skynsamozsto menn af frosto 
+          <a
+            href="/word/thing"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            þings
+          </a>
+           
+          <a
+            href="/word/log"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            logum
+          </a>
+           
+          <a
+            href="/word/hafa"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            hafa
+          </a>
+           iðurlega getet 
+          <a
+            href="/word/firir"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            firir
+          </a>
+           
+          <a
+            href="/word/oss-2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            oss
+          </a>
+           at þer hafet 
+          <a
+            href="/word/spyrja"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            spurt
+          </a>
+           at ver hofum lut i at t bøta nokot um flæstar 
+          <a
+            href="/word/logbok"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            logbøkr
+          </a>
+          .
         </em>
       </p>
       <p>
@@ -631,9 +847,11 @@ exports[`Index page Matches snapshot 1`] = `
       <section
         className="section"
       >
-        <h4>
+        <h3
+          className="h4"
+        >
           Old Norwegian language
-        </h4>
+        </h3>
         <p>
           Old Norwegian is a early form of Norwegian language that was used from 11th to 14th century. It developed from Old West Norse.
         </p>
