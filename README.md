@@ -6,11 +6,12 @@ See live site [here](https://old-norwegian-dictionary.vercel.app)
 
 ## Features
 
-- Online version of Old West Norse dictionary
+- Online version of Old Norwegian dictionary
 - Old Norse to Norwegian translations
 - 40 000+ statically generated pages
 - Search words & definitions.
 - Abbreviations mapped to their full meanings.
+- Automatic cross links to headwords in related dictionaries.
 - High test coverage (unit + integration)
 - Optimized for fast load times (PWA)
 - SEO, Accessibility and Schema optimized
