@@ -8,7 +8,7 @@ interface LetterLinkProps{
 
 export default function LetterLink({ letter }: LetterLinkProps) {
   return (
-   <Link href={`/letter/${letter.slug}`} className={styles.link}>
+   <Link href={`/letter/${letter.slug}`} className={styles.link} prefetch={false}>
       {letter.letter}
     </Link>
   )
