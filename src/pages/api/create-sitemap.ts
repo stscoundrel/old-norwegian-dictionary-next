@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getSitemapEntries, formatSitemap } from 'lib/services/sitemap'
 import { SitemapStream, streamToPromise } from 'sitemap'
+import { getSitemapEntries, formatSitemap } from 'lib/services/sitemap'
 
 /**
  * API endpoint to build new sitemap.xml

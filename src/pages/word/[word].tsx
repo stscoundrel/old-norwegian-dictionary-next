@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 
 // Services.
+import { Crosslink } from 'scandinavian-dictionary-crosslinker'
 import { getWord, getAlphabet, AlphabetLetter } from 'lib/services/dictionary'
 import { Abbreviation, getAbbreviations } from 'lib/services/abbreviations'
 
@@ -13,7 +14,6 @@ import WordDefinition from 'components/WordDefinition'
 import Button from 'components/Button'
 import { ContentType } from 'lib/models/content-types'
 import { DictionaryEntry } from 'lib/models/dictionary'
-import { Crosslink } from 'scandinavian-dictionary-crosslinker'
 import { getCrossLinks } from 'lib/services/crosslinks'
 
 interface WordPageProps{

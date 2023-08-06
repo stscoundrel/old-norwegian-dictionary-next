@@ -1,9 +1,9 @@
-import { capitalize, getOlderSpelling } from 'lib/utils/strings'
 import { lettersToRunes } from 'futhork'
+import { Crosslink } from 'scandinavian-dictionary-crosslinker'
+import { capitalize, getOlderSpelling } from 'lib/utils/strings'
 import { Abbreviation, addAbbreviationsToContent } from 'lib/services/abbreviations'
 import { DictionaryEntry } from 'lib/models/dictionary'
 import Abbreviations from 'components/Abbreviations'
-import { Crosslink } from 'scandinavian-dictionary-crosslinker'
 import Crosslinks from 'components/Crosslinks'
 import styles from './WordDefinition.module.scss'
 
