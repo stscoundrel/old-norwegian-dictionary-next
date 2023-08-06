@@ -1,10 +1,10 @@
 // Services.
+import Link from 'next/link'
 import { getAlphabet, AlphabetLetter } from 'lib/services/dictionary'
 
 // Components.
 import Layout from 'components/Layout'
 import ContentArea from 'components/ContentArea'
-import Link from 'next/link'
 import { ContentType } from 'lib/models/content-types'
 import ExternalLink from 'components/ExternalLink'
 import SampleText from 'components/SampleText'

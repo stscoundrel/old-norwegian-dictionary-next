@@ -1,7 +1,7 @@
+import Link from 'next/link'
 import { ContentType } from 'lib/models/content-types'
 import { getBreadcrumbs } from 'lib/utils/breadcrumbs'
 import { getSchema } from 'lib/utils/schema'
-import Link from 'next/link'
 import { DictionaryEntry } from 'lib/models/dictionary'
 import styles from './Breadcrumbs.module.scss'
 

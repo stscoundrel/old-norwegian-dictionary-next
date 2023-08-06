@@ -1,8 +1,8 @@
 import { getDictionary } from 'old-norwegian-dictionary'
+import { matchesSchema } from 'jafningjar'
 import {
   getAllWords, getByLetter, getWord, getAlphabet,
 } from 'lib/services/dictionary'
-import { matchesSchema } from 'jafningjar'
 
 describe('Dictionary tests', () => {
   const dictionary = getAllWords()

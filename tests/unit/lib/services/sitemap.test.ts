@@ -1,5 +1,5 @@
-import { getSitemapEntries, formatSitemap } from 'lib/services/sitemap'
 import { SitemapStream, streamToPromise } from 'sitemap'
+import { getSitemapEntries, formatSitemap } from 'lib/services/sitemap'
 
 describe('Sitemap tests', () => {
   process.env.NEXT_PUBLIC_SITE_URL = 'https://old-norwegian-dictionary.test'

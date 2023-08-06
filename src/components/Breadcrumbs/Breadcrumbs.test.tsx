@@ -1,6 +1,6 @@
-import { ContentType } from 'lib/models/content-types'
 import ReactDOM from 'react-dom/client'
 import renderer from 'react-test-renderer'
+import { ContentType } from 'lib/models/content-types'
 import Breadcrumbs from './index'
 
 describe('Breadcrumbs component', () => {
