@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check file types
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: stscoundrel/alliser-action@v0.7.2
       name: Alliser action step
       with:
