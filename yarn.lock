@@ -2321,6 +2321,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.11.20":
+  version: 20.11.20
+  resolution: "@types/node@npm:20.11.20"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/8e8de211e6d54425c603388a9b5cc9c434101985d0a1c88aabbf65d10df2b1fccd71855c20e61ae8a75c7aea56cb0f64e722cf7914cff1247d0b62ce21996ac4
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
@@ -8218,6 +8227,7 @@ __metadata:
   resolution: "old-norwegian-dictionary-next@workspace:."
   dependencies:
     "@types/jest": "npm:^29.5.12"
+    "@types/node": "npm:^20.11.20"
     "@types/react": "npm:^18.2.58"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
     "@typescript-eslint/parser": "npm:^7.0.2"
