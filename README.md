@@ -19,6 +19,8 @@ See live site [here](https://old-norwegian-dictionary.vercel.app)
 ## Other related dictionary projects
 - [A Concise Dictionary of Old Icelandic](https://github.com/stscoundrel/old-icelandic-zoega-next)
 - [Cleasby & Vigfusson Old Norse Dictionary](https://github.com/stscoundrel/cleasby-vigfusson-next)
+- [Old Swedish Dictionary](https://github.com/stscoundrel/old-swedish-dictionary-next)
+- [Old Danish Dictionary](https://github.com/stscoundrel/old-danish-dictionary-next)
 
 ### About "Dictionary of the Old Norwegian Language"
 

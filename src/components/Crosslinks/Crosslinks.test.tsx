@@ -18,6 +18,10 @@ describe('Crosslinks component', () => {
       url: 'https://cleasby-vigfusson-dictionary.vercel.app/word/fadir',
       source: DictionarySource.OldNorse,
     },
+    {
+      url: 'https://old-danish-dictionary.vercel.app/word/fader',
+      source: DictionarySource.OldDanish,
+    },
   ]
 
   test('Matches the snapshot', () => {
@@ -27,11 +31,17 @@ describe('Crosslinks component', () => {
     expect(tree).toMatchSnapshot()
   })
 
+  test('Fails gracefully without crosslinks', () => {
+    const tree = renderer.create(<Crosslinks crosslinks={[]} />).toJSON()
+
+    expect(tree).toBeNull()
+  })
+
   test('Has correct amount of crosslinks', () => {
     const tree = renderer.create(<Crosslinks crosslinks={crosslinks} />)
     const { root } = tree
 
-    expect(root.findAllByProps({ className: styles.listItem }).length).toEqual(3)
+    expect(root.findAllByProps({ className: styles.listItem }).length).toEqual(4)
   })
 
   test('Has expected crosslink content', () => {
@@ -40,5 +50,6 @@ describe('Crosslinks component', () => {
     expect(JSON.stringify(tree)).toContain('Old Swedish - K.F Söderwall\'s Dictionary')
     expect(JSON.stringify(tree)).toContain('Old Norse - Cleasby & Vigfusson Dictionary')
     expect(JSON.stringify(tree)).toContain('Old Icelandic - Geir Zoëga\'s Dictionary')
+    expect(JSON.stringify(tree)).toContain('Old Danish - Otto Kalkar\'s Dictionary')
   })
 })
