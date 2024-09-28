@@ -39,6 +39,10 @@ describe('Crosslinks service tests', () => {
         source: 'old-icelandic',
       },
       {
+        url: 'https://old-danish-dictionary.vercel.app/word/fader',
+        source: 'old-danish',
+      },
+      {
         url: 'https://old-swedish-dictionary.vercel.app/word/fadhir',
         source: 'old-swedish',
       },
