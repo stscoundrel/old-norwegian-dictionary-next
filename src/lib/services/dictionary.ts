@@ -2,9 +2,10 @@ import { getDictionary } from 'old-norwegian-dictionary'
 import { VALID_AS_FIRST } from 'old-norse-alphabet'
 import { oldNorseSort } from 'old-norse-alphabet-sort'
 import { slugifyWord, slugifyLetter } from '../utils/slugs'
-import { OriginalDictionaryEntry, DictionaryEntry } from '../models/dictionary'
+import type { OriginalDictionaryEntry, DictionaryEntry } from '../models/dictionary'
 
 let cachedDictionary: DictionaryEntry[] | null = null
+let cachedInitialPages: string[] | null = null
 
 export interface AlphabetLetter{
   letter: string,
@@ -72,4 +73,23 @@ export const getAlphabet = (): AlphabetLetter[] => {
   }))
 
   return formattedLetters
+}
+
+/**
+ * Initial word pages to build are basically 6000
+ * headword pages based on modulus. Larger number
+ * can not be deployed in one go.
+ */
+export const getInitialWordsToBuild = (): string[] => {
+  if (cachedInitialPages) return cachedInitialPages
+
+  const allWords = getAllWords()
+
+  const result: string[] = []
+  for (let i = 0; i < allWords.length; i += 7) {
+    result.push(allWords[i].slug);
+  }
+
+  cachedInitialPages = result
+  return cachedInitialPages
 }

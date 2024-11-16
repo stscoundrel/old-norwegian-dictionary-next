@@ -1,19 +1,21 @@
 import { useRouter } from 'next/router'
 
 // Services.
-import { Crosslink } from 'scandinavian-dictionary-crosslinker'
-import { getWord, getAlphabet, AlphabetLetter } from 'lib/services/dictionary'
-import { Abbreviation, getAbbreviations } from 'lib/services/abbreviations'
+import type { Crosslink } from 'scandinavian-dictionary-crosslinker'
+import {
+  getWord, getAlphabet, type AlphabetLetter, getInitialWordsToBuild,
+} from 'lib/services/dictionary'
+import { type Abbreviation, getAbbreviations } from 'lib/services/abbreviations'
 
 // Utils.
-import { Redirect404ResponseSchema, redirect404 } from 'lib/utils/redirect-404'
+import { type Redirect404ResponseSchema, redirect404 } from 'lib/utils/redirect-404'
 
 // Components.
 import Layout from 'components/Layout'
 import WordDefinition from 'components/WordDefinition'
 import Button from 'components/Button'
 import { ContentType } from 'lib/models/content-types'
-import { DictionaryEntry } from 'lib/models/dictionary'
+import type { DictionaryEntry } from 'lib/models/dictionary'
 import { getCrossLinks } from 'lib/services/crosslinks'
 
 interface WordPageProps{
@@ -29,18 +31,35 @@ interface WordPageParams{
     }
 }
 
-interface LetterPageStaticPathsResponseSchema{
-    paths: string[]
-    fallback: string | boolean
+interface WordPath{
+  params: {
+      word: string
+  }
+}
+
+interface WordPageStaticPathsResponseSchema{
+  paths: WordPath[]
+  fallback: string | boolean
 }
 
 interface WordPageStaticPropsResponseSchema{
     props: WordPageProps
 }
 
-export async function getStaticPaths(): Promise<LetterPageStaticPathsResponseSchema> {
+/**
+ * There are too many word paths for Vercel to build.
+ * It hits 16 000 file limit.
+ *
+ * Build around 6000 pages initially and rest as they are accessed
+ * or remotely revalidated via API.
+ */
+export async function getStaticPaths(): Promise<WordPageStaticPathsResponseSchema> {
+  const initialPages = getInitialWordsToBuild()
+
   return {
-    paths: [],
+    paths: initialPages.map((slug) => ({
+      params: { word: slug },
+    })),
     fallback: 'blocking',
   }
 }
