@@ -2,6 +2,7 @@ import { getDictionary } from 'old-norwegian-dictionary'
 import { matchesSchema } from 'jafningjar'
 import {
   getAllWords, getByLetter, getWord, getAlphabet,
+  getInitialWordsToBuild,
 } from 'lib/services/dictionary'
 
 describe('Dictionary tests', () => {
@@ -102,5 +103,23 @@ describe('Dictionary tests', () => {
     })
 
     expect(foundÖ).toBeTruthy();
+  })
+
+  test('Returns initial batch of pages to build', () => {
+    const wordsToBuild = getInitialWordsToBuild()
+
+    // Correct amount sampled.
+    expect(wordsToBuild.length).toEqual(6003)
+
+    // Deterministic entry slugs, roughly spread through dictionary.
+    expect(wordsToBuild[0]).toEqual('aeri')
+    expect(wordsToBuild[10]).toEqual('sto')
+    expect(wordsToBuild[100]).toEqual('ahankast')
+    expect(wordsToBuild[1000]).toEqual('endrgeta')
+    expect(wordsToBuild[2000]).toEqual('heimankvod')
+    expect(wordsToBuild[3000]).toEqual('langframi')
+    expect(wordsToBuild[4000]).toEqual('rekabutr')
+    expect(wordsToBuild[5000]).toEqual('tak')
+    expect(wordsToBuild[6000]).toEqual('thyrnir')
   })
 })
