@@ -5305,13 +5305,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"futhork@npm:^1.1.9":
-  version: 1.1.9
-  resolution: "futhork@npm:1.1.9"
-  checksum: 10c0/b873b1f5b5160460c318b5baf70596dc040ffabf2a32f5cac65f842ae40349536167e92ea2e5b47734935fafdad8a7d1bfea806b2b19a37550417f47632f88d5
-  languageName: node
-  linkType: hard
-
 "gensync@npm:^1.0.0-beta.2":
   version: 1.0.0-beta.2
   resolution: "gensync@npm:1.0.0-beta.2"
@@ -7847,7 +7840,6 @@ __metadata:
     eslint-plugin-jsx-a11y: "npm:^6.10.0"
     eslint-plugin-react: "npm:^7.37.0"
     eslint-plugin-react-hooks: "npm:^4.6.2"
-    futhork: "npm:^1.1.9"
     identity-obj-proxy: "npm:^3.0.0"
     jafningjar: "npm:^1.0.0"
     jest: "npm:^29.7.0"
@@ -7864,6 +7856,7 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-test-renderer: "npm:^18.3.1"
     reset-css: "npm:^5.0.2"
+    riimut: "npm:^0.9.1"
     sass: "npm:^1.79.4"
     scandinavian-dictionary-crosslinker: "npm:^0.7.0"
     sitemap: "npm:^7.1.1"
@@ -8618,6 +8611,13 @@ __metadata:
   version: 1.3.1
   resolution: "rfdc@npm:1.3.1"
   checksum: 10c0/69f65e3ed30970f8055fac9fbbef9ce578800ca19554eab1dcbffe73a4b8aef536bc4248313889cf25e3b4e38b212c721eabe30856575bf2b2bc3d90f8ba93ef
+  languageName: node
+  linkType: hard
+
+"riimut@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "riimut@npm:0.9.1"
+  checksum: 10c0/de239fe753b083775c4d1c5c25d0fd72dd7f5a6a8f11ef941d7117265b770a2b206d66fddfc359c67dcfb10f17b8be631611ed0a4d9e07c26aa7c564fd3f663b
   languageName: node
   linkType: hard
 

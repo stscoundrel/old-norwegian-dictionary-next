@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "abbreviatrix": "^1.0.8",
-    "futhork": "^1.1.9",
     "markari": "^1.0.7",
     "next": "^14.2.13",
     "next-pwa": "^5.6.0",
@@ -35,6 +34,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "reset-css": "^5.0.2",
+    "riimut": "^0.9.1",
     "sass": "^1.79.4",
     "scandinavian-dictionary-crosslinker": "^0.7.0",
     "sitemap": "^7.1.1",

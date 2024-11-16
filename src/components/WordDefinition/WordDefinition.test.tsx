@@ -39,16 +39,31 @@ const crosslinks = [
   },
 ]
 
+const runes1 = 'ᚦᚱᛆᛚᛦᚿᚦᛁ'
+const runes2 = 'ᚠᚯᛚᛚᚱ'
+
 describe('WordDefinition component', () => {
   test('Does not crash', () => {
     const div = document.createElement('div')
     const root = ReactDOM.createRoot(div)
-    root.render(<WordDefinition data={word} abbreviations={abbreviations} crosslinks={crosslinks}/>)
+    root.render(
+      <WordDefinition
+        data={word}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes1}
+      />,
+    )
   })
 
   test('Matches snapshot', () => {
     const tree = renderer.create(
-      <WordDefinition data={word} abbreviations={abbreviations} crosslinks={crosslinks} />,
+      <WordDefinition
+        data={word}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes1}
+      />,
     ).toJSON()
     expect(tree).toMatchSnapshot()
   })
@@ -59,6 +74,7 @@ describe('WordDefinition component', () => {
         data={wordWithOlderSpelling}
         abbreviations={abbreviations}
         crosslinks={crosslinks}
+        runes={runes2}
       />,
     ).toJSON()
     expect(tree).toMatchSnapshot()
@@ -66,7 +82,12 @@ describe('WordDefinition component', () => {
 
   test('Has correct label', () => {
     const tree = renderer.create(
-      <WordDefinition data={word} abbreviations={abbreviations} crosslinks={crosslinks} />,
+      <WordDefinition
+        data={word}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes1}
+      />,
     )
     const { root } = tree
 

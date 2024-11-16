@@ -17,12 +17,14 @@ import Button from 'components/Button'
 import { ContentType } from 'lib/models/content-types'
 import type { DictionaryEntry } from 'lib/models/dictionary'
 import { getCrossLinks } from 'lib/services/crosslinks'
+import { lettersToRunes } from 'riimut/dist/dialects/medieval-futhork'
 
 interface WordPageProps{
     entry: DictionaryEntry,
     letters: AlphabetLetter[],
     abbreviations: Abbreviation[],
-    crosslinks: Crosslink[]
+    crosslinks: Crosslink[],
+    runes: string
 }
 
 interface WordPageParams{
@@ -80,6 +82,7 @@ export async function getStaticProps(
   const letters = getAlphabet()
   const abbreviations = getAbbreviations(entry)
   const crosslinks = getCrossLinks(entry)
+  const runes = lettersToRunes(entry.word)
 
   return {
     props: {
@@ -87,12 +90,13 @@ export async function getStaticProps(
       letters,
       abbreviations,
       crosslinks,
+      runes,
     },
   }
 }
 
 export default function Word({
-  entry, letters, abbreviations, crosslinks,
+  entry, letters, abbreviations, crosslinks, runes,
 }: WordPageProps) {
   const router = useRouter()
 
@@ -108,7 +112,12 @@ export default function Word({
         letter={null}
         noSearch={false}
     >
-      <WordDefinition data={entry} abbreviations={abbreviations} crosslinks={crosslinks}/>
+      <WordDefinition
+        data={entry}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes}
+      />
       <Button text="Back" action={() => router.back()} />
     </Layout>
   )
