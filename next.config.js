@@ -11,8 +11,4 @@ module.exports = withPWA({
         @import 'styles/rem';
       `,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  swcMinify: true,
 })
