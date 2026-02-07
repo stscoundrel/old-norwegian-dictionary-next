@@ -31,7 +31,7 @@
     "old-norse-alphabet-sort": "^1.1.13",
     "old-norwegian-dictionary": "^1.0.4",
     "old-norwegian-dictionary-abbreviations": "^1.0.5",
-    "react": "^18.3.1",
+    "react": "^19.2.4",
     "react-dom": "^18.3.1",
     "reset-css": "^5.0.2",
     "riimut": "^0.9.1",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.17.2",
-    "@types/react": "^18.3.24",
+    "@types/react": "^19.2.13",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^8.54.0",
     "cypress": "^13.17.0",
