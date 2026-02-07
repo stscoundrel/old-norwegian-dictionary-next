@@ -32,7 +32,7 @@
     "old-norwegian-dictionary": "^1.0.4",
     "old-norwegian-dictionary-abbreviations": "^1.0.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.2.4",
     "reset-css": "^5.0.2",
     "riimut": "^0.9.1",
     "sass": "^1.90.0",
