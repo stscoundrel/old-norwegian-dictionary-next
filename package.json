@@ -64,7 +64,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "node-mocks-http": "^1.17.2",
     "react-test-renderer": "^18.3.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "packageManager": "yarn@4.1.0"
 }
