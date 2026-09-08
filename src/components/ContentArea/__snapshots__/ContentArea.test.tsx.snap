@@ -4,6 +4,8 @@ exports[`ContentArea component Matches snapshot 1`] = `
 <section
   className="section"
 >
-  Content
+  <p>
+    Content
+  </p>
 </section>
 `;

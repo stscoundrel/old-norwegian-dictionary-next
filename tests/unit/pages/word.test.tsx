@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer'
 import { DictionarySource } from 'scandinavian-dictionary-crosslinker'
 import Word, { getStaticProps, getStaticPaths } from 'pages/word/[word]'
 import { getAlphabet } from 'lib/services/dictionary'
+import { DictionaryEntry } from 'lib/models/dictionary'
 
 const mockHandler = jest.fn()
 
@@ -86,7 +87,7 @@ describe('Word page: render & usage', () => {
   test('Returns null if entry is unavailable', () => {
     const tree = renderer.create(
       <Word
-        entry={null}
+        entry={null as unknown as DictionaryEntry}
         letters={getAlphabet()}
         abbreviations={abbreviations}
         crosslinks={crosslinks}

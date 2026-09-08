@@ -17,19 +17,19 @@ exports[`SearchResults component Matches snapshot 1`] = `
       >
         <a
           className="link"
-          href="/word/adal"
+          href="/word/af"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          aðal
+          af
         </a>
         <ul>
           <li
             className="foundIn"
             dangerouslySetInnerHTML={
               {
-                "__html": "[O. H. G. adal, <i>genus;</i> cp. also A. S. éðele, <i>nobilis;</i> Old Engl. and Scot. <i>ethel;</i> Germ. <i>edel;</i> eðla- and eðal- came from mod. Dan. into Icel. aðall, <i>nobility.</i> It does not occur in old writings in this sense.]",
+                "__html": "<strong>4.</strong> denoting <i>distance;</i> þat er komit af þjóðleið, <i>out of the high road, remote,</i> Eg. 369; af þjóðbraut, Grág. ii. 264, i. 15; Otradalr (a farm) var mjök af vegi, <i>far out of the way,</i> Háv. 53.",
               }
             }
           />
@@ -42,19 +42,19 @@ exports[`SearchResults component Matches snapshot 1`] = `
       >
         <a
           className="link"
-          href="/word/adal-vellir"
+          href="/word/af"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
         >
-          aðal-vellir
+          af
         </a>
         <ul>
           <li
             className="foundIn"
             dangerouslySetInnerHTML={
               {
-                "__html": "In headword",
+                "__html": "<strong>4.</strong> denoting <i>distance;</i> þat er komit af þjóðleið, <i>out of the high road, remote,</i> Eg. 369; af þjóðbraut, Grág. ii. 264, i. 15; Otradalr (a farm) var mjök af vegi, <i>far out of the way,</i> Háv. 53.",
               }
             }
           />

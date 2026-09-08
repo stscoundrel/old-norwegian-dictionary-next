@@ -4,13 +4,12 @@ import SearchTeaser from './index'
 
 const word = {
   word: 'aðal-vellir',
-  definitions: [
-    'm. pl. = óðalvellir, Rm.',
-  ],
+  definition: 'm. pl. = óðalvellir, Rm.',
   slug: 'adal-vellir',
   foundIn: [
     'In headword',
   ],
+  partOfSpeech: 'gg',
 }
 
 describe('Search teaser component', () => {
