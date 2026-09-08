@@ -100,7 +100,7 @@ describe('Schema structure tests', () => {
       },
     )
 
-    const result = getSchema()
+    const result = getSchema(null)
 
     expect(result).toEqual(expected)
   })

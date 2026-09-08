@@ -76,7 +76,7 @@ describe('SEO / meta tags tests', () => {
       description: 'Dictionary of the Old Norwegian Language - 40 000+ words',
     }
 
-    const result = getSeo()
+    const result = getSeo(null, ContentType.Other)
 
     expect(result).toEqual(expected)
   })

@@ -6,11 +6,11 @@ describe('ContentArea component', () => {
   test('Does not crash', () => {
     const div = document.createElement('div')
     const root = ReactDOM.createRoot(div)
-    root.render(<ContentArea>Content</ContentArea>)
+    root.render(<ContentArea><p>Content</p></ContentArea>)
   })
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(<ContentArea>Content</ContentArea>).toJSON()
+    const tree = renderer.create(<ContentArea><p>Content</p></ContentArea>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
