@@ -14,7 +14,7 @@ interface LayoutProps{
   letters: AlphabetLetter[],
   letter: AlphabetLetter | null,
   noSearch: boolean,
-  children: JSX.Element | JSX.Element[],
+  children?: JSX.Element | JSX.Element[],
 }
 
 export default function Layout({

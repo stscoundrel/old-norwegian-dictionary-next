@@ -4,6 +4,7 @@ import Search from './index'
 
 const mockHandler = jest.fn()
 const mockEvent = jest.fn()
+// @ts-expect-error lord almighty
 mockEvent.preventDefault = jest.fn()
 
 /**

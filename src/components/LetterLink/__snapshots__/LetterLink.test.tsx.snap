@@ -3,9 +3,11 @@
 exports[`LetterLink component Matches snapshot 1`] = `
 <a
   className="link"
-  href="/letter/undefined"
+  href="/letter/a"
   onClick={[Function]}
   onMouseEnter={[Function]}
   onTouchStart={[Function]}
-/>
+>
+  a
+</a>
 `;

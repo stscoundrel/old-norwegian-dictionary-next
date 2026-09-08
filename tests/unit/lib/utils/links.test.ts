@@ -1,3 +1,4 @@
+import { ContentType } from 'lib/models/content-types'
 import { getWordLink, getLetterLink, getCanonicalUrl } from 'lib/utils/links'
 
 describe('Link utils', () => {
@@ -38,9 +39,9 @@ describe('Link utils', () => {
     const expectedWord = 'https://old-norwegian-dictionary.test/word/aflsmadr'
     const expectedLetter = 'https://old-norwegian-dictionary.test/letter/ae'
 
-    const result1 = getCanonicalUrl(word, 'letter', letter)
-    const result2 = getCanonicalUrl(word, 'word')
-    const result3 = getCanonicalUrl(null, 'main')
+    const result1 = getCanonicalUrl(word, ContentType.Letter, letter)
+    const result2 = getCanonicalUrl(word, ContentType.Word, null)
+    const result3 = getCanonicalUrl(null, ContentType.Other, null)
 
     expect(result1).toEqual(expectedLetter)
     expect(result2).toEqual(expectedWord)
