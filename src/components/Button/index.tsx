@@ -1,14 +1,16 @@
-interface ButtonCallback{
-  (): void
+interface ButtonCallback {
+  (): void;
 }
 
-interface ButtonPros{
-  text: string,
-  action: ButtonCallback,
+interface ButtonPros {
+  text: string;
+  action: ButtonCallback;
 }
 
 export default function Button({ text, action }: ButtonPros) {
   return (
-    <a className="button" onClick={action}>{text}</a>
-  )
+    <a className="button" onClick={action}>
+      {text}
+    </a>
+  );
 }

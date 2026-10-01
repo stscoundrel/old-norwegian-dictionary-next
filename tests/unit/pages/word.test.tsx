@@ -1,11 +1,11 @@
-import ReactDOM from 'react-dom/client'
-import renderer from 'react-test-renderer'
-import { DictionarySource } from 'scandinavian-dictionary-crosslinker'
-import Word, { getStaticProps, getStaticPaths } from 'pages/word/[word]'
-import { getAlphabet } from 'lib/services/dictionary'
-import { DictionaryEntry } from 'lib/models/dictionary'
+import ReactDOM from 'react-dom/client';
+import renderer from 'react-test-renderer';
+import { DictionarySource } from 'scandinavian-dictionary-crosslinker';
+import Word, { getStaticProps, getStaticPaths } from 'pages/word/[word]';
+import { getAlphabet } from 'lib/services/dictionary';
+import { DictionaryEntry } from 'lib/models/dictionary';
 
-const mockHandler = jest.fn()
+const mockHandler = jest.fn();
 
 /**
  * Mock router
@@ -17,17 +17,18 @@ jest.mock('next/router', () => ({
       defaultLocale: undefined,
       asPath: '/test',
       back: mockHandler,
-    }
+    };
   },
-}))
+}));
 
 describe('Word page: render & usage', () => {
   const word = {
     word: 'þrályndi',
     partOfSpeech: 'n',
-    definition: 'þrályndi, n. d. s.; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.',
+    definition:
+      'þrályndi, n. d. s.; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.',
     slug: 'thralyndi-2',
-  }
+  };
 
   const abbreviations = [
     {
@@ -42,7 +43,7 @@ describe('Word page: render & usage', () => {
       abbreviation: 'm.',
       explanation: 'Masculin.',
     },
-  ]
+  ];
 
   const crosslinks = [
     {
@@ -53,13 +54,13 @@ describe('Word page: render & usage', () => {
       url: 'https://old-swedish-dictionary.vercel.app/word/fadhir',
       source: DictionarySource.OldSwedish,
     },
-  ]
+  ];
 
-  const runes = 'ᚦᚱᛆᛚᛦᚿᚦᛁ'
+  const runes = 'ᚦᚱᛆᛚᛦᚿᚦᛁ';
 
   test('Does not crash', () => {
-    const div = document.createElement('div')
-    const root = ReactDOM.createRoot(div)
+    const div = document.createElement('div');
+    const root = ReactDOM.createRoot(div);
     root.render(
       <Word
         entry={word}
@@ -68,34 +69,38 @@ describe('Word page: render & usage', () => {
         crosslinks={crosslinks}
         runes={runes}
       />,
-    )
-  })
+    );
+  });
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(
-      <Word
-        entry={word}
-        letters={getAlphabet()}
-        abbreviations={abbreviations}
-        crosslinks={crosslinks}
-        runes={runes}
-      />,
-    ).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
+    const tree = renderer
+      .create(
+        <Word
+          entry={word}
+          letters={getAlphabet()}
+          abbreviations={abbreviations}
+          crosslinks={crosslinks}
+          runes={runes}
+        />,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
   test('Returns null if entry is unavailable', () => {
-    const tree = renderer.create(
-      <Word
-        entry={null as unknown as DictionaryEntry}
-        letters={getAlphabet()}
-        abbreviations={abbreviations}
-        crosslinks={crosslinks}
-        runes={runes}
-      />,
-    ).toJSON()
-    expect(tree).toBeNull()
-  })
+    const tree = renderer
+      .create(
+        <Word
+          entry={null as unknown as DictionaryEntry}
+          letters={getAlphabet()}
+          abbreviations={abbreviations}
+          crosslinks={crosslinks}
+          runes={runes}
+        />,
+      )
+      .toJSON();
+    expect(tree).toBeNull();
+  });
 
   test('Back button works', async () => {
     const tree = renderer.create(
@@ -106,29 +111,29 @@ describe('Word page: render & usage', () => {
         crosslinks={crosslinks}
         runes={runes}
       />,
-    )
+    );
 
     // Click back btn.
     await renderer.act(async () => {
-      expect(mockHandler).not.toHaveBeenCalled()
-      await tree.root.findByProps({ text: 'Back' }).props.action()
+      expect(mockHandler).not.toHaveBeenCalled();
+      await tree.root.findByProps({ text: 'Back' }).props.action();
 
       // Assert mockrouter received a push.
-      expect(mockHandler).toHaveBeenCalled()
+      expect(mockHandler).toHaveBeenCalled();
       expect(mockHandler.mock.calls.length).toBe(1);
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Word page: data fetching', () => {
   test('getStaticPaths works', async () => {
-    const result = await getStaticPaths()
+    const result = await getStaticPaths();
 
-    expect(result.fallback).toBe('blocking')
+    expect(result.fallback).toBe('blocking');
 
     // Should build initial pages.
-    expect(result.paths.length).toBe(6003)
-  })
+    expect(result.paths.length).toBe(6003);
+  });
 
   test('getStaticProps works', async () => {
     const expected = {
@@ -136,7 +141,8 @@ describe('Word page: data fetching', () => {
         entry: {
           word: 'þrályndi',
           partOfSpeech: 'n',
-          definition: 'þrályndi, n. d. s.; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.',
+          definition:
+            'þrályndi, n. d. s.; hélt honum aptr fornsiðvenja ok mykyt þrályndi Barl. 12524;Fgrdl. 5816.',
           slug: 'thralyndi-2',
         },
         abbreviations: [
@@ -153,21 +159,21 @@ describe('Word page: data fetching', () => {
         letters: getAlphabet(),
         runes: 'ᚦᚱᛆᛚᛦᚿᚦᛁ',
       },
-    }
+    };
 
-    const result = await getStaticProps({ params: { word: 'thralyndi-2' } })
+    const result = await getStaticProps({ params: { word: 'thralyndi-2' } });
 
-    expect(result).toEqual(expected)
-  })
+    expect(result).toEqual(expected);
+  });
 
   test('getStaticProps returns 404 redirect for unkown words', async () => {
     const expected = {
       props: {},
       notFound: true,
-    }
+    };
 
-    const result = await getStaticProps({ params: { word: 'loremipsum' } })
+    const result = await getStaticProps({ params: { word: 'loremipsum' } });
 
-    expect(result).toEqual(expected)
-  })
-})
+    expect(result).toEqual(expected);
+  });
+});

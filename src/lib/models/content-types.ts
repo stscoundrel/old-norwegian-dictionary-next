@@ -1,9 +1,9 @@
 export enum ContentType {
-    Word = 'word',
-    Letter = 'letter',
-    Page = 'page',
-    Breadcrumbs = 'breadcrumbs',
-    Other = 'other'
+  Word = 'word',
+  Letter = 'letter',
+  Page = 'page',
+  Breadcrumbs = 'breadcrumbs',
+  Other = 'other',
 }
 
-export default ContentType
+export default ContentType;

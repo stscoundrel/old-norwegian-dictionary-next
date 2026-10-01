@@ -1,23 +1,27 @@
-import { getCrosslinks as getAllCrossLinks, Crosslink, getOldINorwegianCrosslinks } from 'scandinavian-dictionary-crosslinker'
-import { DictionaryEntry } from 'lib/models/dictionary'
+import {
+  getCrosslinks as getAllCrossLinks,
+  Crosslink,
+  getOldINorwegianCrosslinks,
+} from 'scandinavian-dictionary-crosslinker';
+import { DictionaryEntry } from 'lib/models/dictionary';
 
-export type { Crosslink } from 'scandinavian-dictionary-crosslinker'
+export type { Crosslink } from 'scandinavian-dictionary-crosslinker';
 
-let crossLinkCache: Record<string, Crosslink[]> | null = null
+let crossLinkCache: Record<string, Crosslink[]> | null = null;
 
 const populateCrossLinks = () => {
   if (!crossLinkCache) {
-    crossLinkCache = getAllCrossLinks()
+    crossLinkCache = getAllCrossLinks();
   }
 
-  return crossLinkCache
-}
+  return crossLinkCache;
+};
 
 export const getCrossLinks = (entry: DictionaryEntry): Crosslink[] => {
-  const crosslinks = populateCrossLinks()
+  const crosslinks = populateCrossLinks();
   if (Object.prototype.hasOwnProperty.call(crosslinks, entry.slug)) {
-    return getOldINorwegianCrosslinks(entry.slug)
+    return getOldINorwegianCrosslinks(entry.slug);
   }
 
-  return []
-}
+  return [];
+};

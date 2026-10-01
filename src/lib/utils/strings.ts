@@ -1,10 +1,10 @@
-export const capitalize = (
-  content: string,
-): string => (
-  content.charAt(0).toUpperCase() + content.slice(1).toLowerCase()
-)
+export const capitalize = (content: string): string =>
+  content.charAt(0).toUpperCase() + content.slice(1).toLowerCase();
 
-const transformWithMap = (content: string, dictionary: Map<string, string>): string => {
+const transformWithMap = (
+  content: string,
+  dictionary: Map<string, string>,
+): string => {
   let result = '';
   const parts: string[] = content.split('');
 
@@ -22,9 +22,7 @@ const transformWithMap = (content: string, dictionary: Map<string, string>): str
 };
 
 export const getOlderSpelling = (headword: string): string => {
-  const NEW_TO_OLD = new Map([
-    ['ö', 'ǫ'],
-  ])
+  const NEW_TO_OLD = new Map([['ö', 'ǫ']]);
 
   return transformWithMap(headword, NEW_TO_OLD);
 };

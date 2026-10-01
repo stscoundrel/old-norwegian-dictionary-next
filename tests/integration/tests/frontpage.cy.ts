@@ -1,7 +1,7 @@
 describe('Frontpage', () => {
   it('Frontpage loads', () => {
-    cy.visit('/')
-  })
-})
+    cy.visit('/');
+  });
+});
 
 export {};

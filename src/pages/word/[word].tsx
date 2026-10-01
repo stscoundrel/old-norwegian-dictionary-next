@@ -1,51 +1,60 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 // Services.
-import type { Crosslink } from 'scandinavian-dictionary-crosslinker'
+import type { Crosslink } from 'scandinavian-dictionary-crosslinker';
 import {
-  getWord, getAlphabet, type AlphabetLetter, getInitialWordsToBuild,
-} from 'lib/services/dictionary'
-import { type Abbreviation, getAbbreviations } from 'lib/services/abbreviations'
+  getWord,
+  getAlphabet,
+  type AlphabetLetter,
+  getInitialWordsToBuild,
+} from 'lib/services/dictionary';
+import {
+  type Abbreviation,
+  getAbbreviations,
+} from 'lib/services/abbreviations';
 
 // Utils.
-import { type Redirect404ResponseSchema, redirect404 } from 'lib/utils/redirect-404'
+import {
+  type Redirect404ResponseSchema,
+  redirect404,
+} from 'lib/utils/redirect-404';
 
 // Components.
-import Layout from 'components/Layout'
-import WordDefinition from 'components/WordDefinition'
-import Button from 'components/Button'
-import { ContentType } from 'lib/models/content-types'
-import type { DictionaryEntry } from 'lib/models/dictionary'
-import { getCrossLinks } from 'lib/services/crosslinks'
-import { lettersToRunes } from 'riimut/dist/dialects/medieval-futhork'
+import Layout from 'components/Layout';
+import WordDefinition from 'components/WordDefinition';
+import Button from 'components/Button';
+import { ContentType } from 'lib/models/content-types';
+import type { DictionaryEntry } from 'lib/models/dictionary';
+import { getCrossLinks } from 'lib/services/crosslinks';
+import { lettersToRunes } from 'riimut/dist/dialects/medieval-futhork';
 
-interface WordPageProps{
-    entry: DictionaryEntry,
-    letters: AlphabetLetter[],
-    abbreviations: Abbreviation[],
-    crosslinks: Crosslink[],
-    runes: string
+interface WordPageProps {
+  entry: DictionaryEntry;
+  letters: AlphabetLetter[];
+  abbreviations: Abbreviation[];
+  crosslinks: Crosslink[];
+  runes: string;
 }
 
-interface WordPageParams{
-    params: {
-        word: string
-    }
-}
-
-interface WordPath{
+interface WordPageParams {
   params: {
-      word: string
-  }
+    word: string;
+  };
 }
 
-interface WordPageStaticPathsResponseSchema{
-  paths: WordPath[]
-  fallback: string | boolean
+interface WordPath {
+  params: {
+    word: string;
+  };
 }
 
-interface WordPageStaticPropsResponseSchema{
-    props: WordPageProps
+interface WordPageStaticPathsResponseSchema {
+  paths: WordPath[];
+  fallback: string | boolean;
+}
+
+interface WordPageStaticPropsResponseSchema {
+  props: WordPageProps;
 }
 
 /**
@@ -56,33 +65,35 @@ interface WordPageStaticPropsResponseSchema{
  * or remotely revalidated via API.
  */
 export async function getStaticPaths(): Promise<WordPageStaticPathsResponseSchema> {
-  const initialPages = getInitialWordsToBuild()
+  const initialPages = getInitialWordsToBuild();
 
   return {
     paths: initialPages.map((slug) => ({
       params: { word: slug },
     })),
     fallback: 'blocking',
-  }
+  };
 }
 
 /**
  * Get word by slug.
  */
-export async function getStaticProps(
-  { params }: WordPageParams,
-): Promise<WordPageStaticPropsResponseSchema | Redirect404ResponseSchema> {
-  const { word } = params
-  const entry = getWord(word)
+export async function getStaticProps({
+  params,
+}: WordPageParams): Promise<
+  WordPageStaticPropsResponseSchema | Redirect404ResponseSchema
+> {
+  const { word } = params;
+  const entry = getWord(word);
 
   if (!entry) {
-    return redirect404()
+    return redirect404();
   }
 
-  const letters = getAlphabet()
-  const abbreviations = getAbbreviations(entry)
-  const crosslinks = getCrossLinks(entry)
-  const runes = lettersToRunes(entry.word)
+  const letters = getAlphabet();
+  const abbreviations = getAbbreviations(entry);
+  const crosslinks = getCrossLinks(entry);
+  const runes = lettersToRunes(entry.word);
 
   return {
     props: {
@@ -92,25 +103,29 @@ export async function getStaticProps(
       crosslinks,
       runes,
     },
-  }
+  };
 }
 
 export default function Word({
-  entry, letters, abbreviations, crosslinks, runes,
+  entry,
+  letters,
+  abbreviations,
+  crosslinks,
+  runes,
 }: WordPageProps) {
-  const router = useRouter()
+  const router = useRouter();
 
   if (!entry) {
-    return null
+    return null;
   }
 
   return (
     <Layout
-        type={ContentType.Word}
-        content={entry}
-        letters={letters}
-        letter={null}
-        noSearch={false}
+      type={ContentType.Word}
+      content={entry}
+      letters={letters}
+      letter={null}
+      noSearch={false}
     >
       <WordDefinition
         data={entry}
@@ -120,5 +135,5 @@ export default function Word({
       />
       <Button text="Back" action={() => router.back()} />
     </Layout>
-  )
+  );
 }
