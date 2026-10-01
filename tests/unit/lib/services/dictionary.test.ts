@@ -1,125 +1,137 @@
-import { getDictionary } from 'old-norwegian-dictionary'
-import { matchesSchema } from 'jafningjar'
+import { getDictionary } from 'old-norwegian-dictionary';
+import { matchesSchema } from 'jafningjar';
 import {
-  getAllWords, getByLetter, getWord, getAlphabet,
+  getAllWords,
+  getByLetter,
+  getWord,
+  getAlphabet,
   getInitialWordsToBuild,
-} from 'lib/services/dictionary'
+} from 'lib/services/dictionary';
 
 describe('Dictionary tests', () => {
-  const dictionary = getAllWords()
+  const dictionary = getAllWords();
   test('Dictionary is not identical with original source.', () => {
-    const originalDictionary = getDictionary()
+    const originalDictionary = getDictionary();
 
-    expect(originalDictionary).not.toMatchObject(dictionary)
-  })
+    expect(originalDictionary).not.toMatchObject(dictionary);
+  });
 
   test('Enrichened dictionary has equal amount of entries as the original one', () => {
-    expect(getDictionary().length).toBe(getAllWords().length)
-  })
+    expect(getDictionary().length).toBe(getAllWords().length);
+  });
 
   test('Dictionary has added url slugs to source', () => {
     dictionary.forEach((entry) => {
-      expect(Object.keys(entry)).toEqual(['word', 'definition', 'partOfSpeech', 'slug'])
-    })
-  })
+      expect(Object.keys(entry)).toEqual([
+        'word',
+        'definition',
+        'partOfSpeech',
+        'slug',
+      ]);
+    });
+  });
 
   test('Dictionary slugs are unique', () => {
-    const slugs = new Set()
+    const slugs = new Set();
 
     dictionary.forEach((entry) => {
-      slugs.add(entry.slug)
-    })
+      slugs.add(entry.slug);
+    });
 
-    expect(slugs.size).toEqual(dictionary.length)
-  })
+    expect(slugs.size).toEqual(dictionary.length);
+  });
 
   test('Dictionary gets words by letter', () => {
-    const aWords = getByLetter('A')
-    const þWords = getByLetter('þ')
+    const aWords = getByLetter('A');
+    const þWords = getByLetter('þ');
 
-    expect(aWords.length).toBe(1876)
-    expect(þWords.length).toBe(1126)
+    expect(aWords.length).toBe(1876);
+    expect(þWords.length).toBe(1126);
 
     aWords.forEach((entry) => {
-      expect(entry.word.charAt(0).toLowerCase()).toBe('a')
-    })
+      expect(entry.word.charAt(0).toLowerCase()).toBe('a');
+    });
 
     þWords.forEach((entry) => {
-      expect(entry.word.charAt(0).toLowerCase()).toBe('þ')
-    })
-  })
+      expect(entry.word.charAt(0).toLowerCase()).toBe('þ');
+    });
+  });
 
   test('Dictionary gets individual words by slug', () => {
-    const word1 = getWord('aflsmadr')
-    const word2 = getWord('ablastarfreistni')
-    const word3 = getWord('thyrnikorona')
+    const word1 = getWord('aflsmadr');
+    const word2 = getWord('ablastarfreistni');
+    const word3 = getWord('thyrnikorona');
 
-    expect(word1.word.toLowerCase()).toBe('aflsmaðr')
-    expect(word1.slug).toBe('aflsmadr')
-    expect(word1.partOfSpeech).toBe('adj')
-    expect(word1.definition).toEqual('aflsmaðr, adj. stærk, kraftig Person; kapp-gjarnir ok alfsmenn (for aflsmenn) íguðu verki Leif. 1811.')
+    expect(word1.word.toLowerCase()).toBe('aflsmaðr');
+    expect(word1.slug).toBe('aflsmadr');
+    expect(word1.partOfSpeech).toBe('adj');
+    expect(word1.definition).toEqual(
+      'aflsmaðr, adj. stærk, kraftig Person; kapp-gjarnir ok alfsmenn (for aflsmenn) íguðu verki Leif. 1811.',
+    );
 
-    expect(word2.word.toLowerCase()).toBe('ablástarfreistni')
-    expect(word2.slug).toBe('ablastarfreistni')
-    expect(word2.partOfSpeech).toBe('f')
-    expect(word2.definition).toEqual('ablástarfreistni, f. onde Indskydelser, hvor-ved et Menneske fristes; smiðbelgir hans(ero) áblástarfreistni Elucid. 1363.')
+    expect(word2.word.toLowerCase()).toBe('ablástarfreistni');
+    expect(word2.slug).toBe('ablastarfreistni');
+    expect(word2.partOfSpeech).toBe('f');
+    expect(word2.definition).toEqual(
+      'ablástarfreistni, f. onde Indskydelser, hvor-ved et Menneske fristes; smiðbelgir hans(ero) áblástarfreistni Elucid. 1363.',
+    );
 
-    expect(word3.word.toLowerCase()).toBe('þyrnikóróna')
-    expect(word3.slug).toBe('thyrnikorona')
-    expect(word3.partOfSpeech).toBe('f')
-    expect(word3.definition).toEqual('þyrnikóróna, f. Tornekrone. Mar. 79131.')
-  })
+    expect(word3.word.toLowerCase()).toBe('þyrnikóróna');
+    expect(word3.slug).toBe('thyrnikorona');
+    expect(word3.partOfSpeech).toBe('f');
+    expect(word3.definition).toEqual('þyrnikóróna, f. Tornekrone. Mar. 79131.');
+  });
 
   test('Dictionary gets alphabet constants with slugs', () => {
-    const alphabet = getAlphabet()
+    const alphabet = getAlphabet();
 
     const expected = {
       letter: '',
       slug: '',
-    }
+    };
 
     alphabet.forEach((entry) => {
-      expect(matchesSchema(entry, expected)).toBeTruthy()
-    })
-  })
+      expect(matchesSchema(entry, expected)).toBeTruthy();
+    });
+  });
 
   test('Alphabet does not contain invalid chars.', () => {
-    const alphabet = getAlphabet()
-    const invalids = ['ǫ', 'ø']
+    const alphabet = getAlphabet();
+    const invalids = ['ǫ', 'ø'];
 
     alphabet.forEach((letter) => {
-      expect(invalids.includes(letter.letter)).toBeFalsy()
-    })
-  })
+      expect(invalids.includes(letter.letter)).toBeFalsy();
+    });
+  });
 
   test('Alphabet contains added ö letter.', () => {
-    const alphabet = getAlphabet()
-    let foundÖ = false
+    const alphabet = getAlphabet();
+    let foundÖ = false;
 
     alphabet.forEach((letter) => {
       if (letter.letter === 'ö') {
-        foundÖ = true
+        foundÖ = true;
       }
-    })
+    });
 
     expect(foundÖ).toBeTruthy();
-  })
+  });
 
   test('Returns initial batch of pages to build', () => {
-    const wordsToBuild = getInitialWordsToBuild()
+    const wordsToBuild = getInitialWordsToBuild();
 
     // Correct amount sampled.
-    expect(wordsToBuild.length).toEqual(6003)
+    expect(wordsToBuild.length).toEqual(6003);
 
     // Deterministic entry slugs, roughly spread through dictionary.
-    expect(wordsToBuild[0]).toEqual('aeri')
-    expect(wordsToBuild[10]).toEqual('sto')
-    expect(wordsToBuild[100]).toEqual('ahankast')
-    expect(wordsToBuild[1000]).toEqual('endrgeta')
-    expect(wordsToBuild[2000]).toEqual('heimankvod')
-    expect(wordsToBuild[3000]).toEqual('langframi')
-    expect(wordsToBuild[4000]).toEqual('rekabutr')
-    expect(wordsToBuild[5000]).toEqual('tak')
-    expect(wordsToBuild[6000]).toEqual('thyrnir')
-  })
-})
+    expect(wordsToBuild[0]).toEqual('aeri');
+    expect(wordsToBuild[10]).toEqual('sto');
+    expect(wordsToBuild[100]).toEqual('ahankast');
+    expect(wordsToBuild[1000]).toEqual('endrgeta');
+    expect(wordsToBuild[2000]).toEqual('heimankvod');
+    expect(wordsToBuild[3000]).toEqual('langframi');
+    expect(wordsToBuild[4000]).toEqual('rekabutr');
+    expect(wordsToBuild[5000]).toEqual('tak');
+    expect(wordsToBuild[6000]).toEqual('thyrnir');
+  });
+});

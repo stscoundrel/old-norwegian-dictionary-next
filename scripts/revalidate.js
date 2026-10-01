@@ -11,7 +11,6 @@ const revalidatePages = async (secret, baseUrl = 'https://old-norwegian-dictiona
       const end = start + 250
       const url = `${baseUrl}/api/revalidate?secret=${secret}&start=${start}&end=${end}`
       console.time('Time')
-      // eslint-disable-next-line no-await-in-loop
       const result = await fetch(url)
 
       if (result.status === 200) {
@@ -32,7 +31,6 @@ const revalidatePages = async (secret, baseUrl = 'https://old-norwegian-dictiona
         const [retryStart, retryEnd] = retrys[i]
         const url = `${baseUrl}/api/revalidate?secret=${secret}&start=${retryStart}&end=${retryEnd}`
         console.time(`${retryStart} - ${retryEnd}`)
-        // eslint-disable-next-line no-await-in-loop
         const result = await fetch(url)
         if (result.status === 200) {
           console.log('Succesfull retry :)')

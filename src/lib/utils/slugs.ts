@@ -1,8 +1,8 @@
-import slugify from 'slugify'
+import slugify from 'slugify';
 
 interface SlugMapping {
-    letter: string,
-    slug: string
+  letter: string;
+  slug: string;
 }
 
 const slugTable: SlugMapping[] = [
@@ -54,38 +54,39 @@ const slugTable: SlugMapping[] = [
     letter: 'æ',
     slug: 'ae',
   },
-]
+];
 
 export const slugifyLetter = (letter: string): string => {
-  let slug = ''
+  let slug = '';
 
   slugTable.forEach((entry) => {
     if (entry.letter === letter) {
-      slug = entry.slug
+      slug = entry.slug;
     }
-  })
+  });
 
   if (slug === '') {
-    slug = slugify(letter)
+    slug = slugify(letter);
   }
 
-  return slug.toLowerCase()
-}
+  return slug.toLowerCase();
+};
 
-export const slugifyWord = (word: string): string => slugify(word).toLowerCase()
+export const slugifyWord = (word: string): string =>
+  slugify(word).toLowerCase();
 
 export const decodeLetter = (slug: string): string => {
-  let letter = ''
+  let letter = '';
 
   slugTable.forEach((entry) => {
     if (entry.slug === slug) {
-      letter = entry.letter
+      letter = entry.letter;
     }
-  })
+  });
 
   if (letter === '') {
-    letter = slug
+    letter = slug;
   }
 
-  return letter
-}
+  return letter;
+};

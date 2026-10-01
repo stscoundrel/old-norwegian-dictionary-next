@@ -1,75 +1,78 @@
-import { markWords } from 'markari'
-import { getAbbreviations, addAbbreviationsToContent } from 'lib/services/abbreviations'
-import { DictionaryEntry } from 'lib/models/dictionary'
+import { markWords } from 'markari';
+import {
+  getAbbreviations,
+  addAbbreviationsToContent,
+} from 'lib/services/abbreviations';
+import { DictionaryEntry } from 'lib/models/dictionary';
 
-export interface SearchResult extends DictionaryEntry{
-    foundIn: string[],
+export interface SearchResult extends DictionaryEntry {
+  foundIn: string[];
 }
 
-export type Criteria = 'headword' | 'definition'
+export type Criteria = 'headword' | 'definition';
 
 const formatResults = (results, search, criteria): SearchResult[] => {
   const formattedResults = results.map((result) => {
-    const foundIn: string[] = []
+    const foundIn: string[] = [];
 
     if (criteria.includes('definition')) {
       if (result.definition.toLowerCase().includes(search.toLowerCase())) {
-        const abbreviations = getAbbreviations(result)
-        const highlighterDefinition = markWords(search, result.definition)
+        const abbreviations = getAbbreviations(result);
+        const highlighterDefinition = markWords(search, result.definition);
         const abbrTaggedDefinition = addAbbreviationsToContent(
           highlighterDefinition,
           abbreviations,
-        )
-        foundIn.push(abbrTaggedDefinition)
+        );
+        foundIn.push(abbrTaggedDefinition);
       }
     }
 
     if (foundIn.length === 0) {
-      const highlightedHeadword = markWords(search, result.word)
-      foundIn.push(`In headword: ${highlightedHeadword}`)
+      const highlightedHeadword = markWords(search, result.word);
+      foundIn.push(`In headword: ${highlightedHeadword}`);
     }
 
     return {
       ...result,
       foundIn,
-    }
-  })
+    };
+  });
 
-  return formattedResults
-}
+  return formattedResults;
+};
 
 export const searchDictionary = (
   search: string,
   dictionary: DictionaryEntry[],
   criteria: Criteria[] = ['headword', 'definition'],
 ): SearchResult[] => {
-  const filteredSearch = search.toLowerCase()
+  const filteredSearch = search.toLowerCase();
 
   const results = dictionary.filter((entry) => {
-    let matchesSearch = false
+    let matchesSearch = false;
 
     if (criteria.includes('headword')) {
       if (entry.word.toLowerCase().includes(filteredSearch)) {
-        matchesSearch = true
+        matchesSearch = true;
       }
 
       if (entry.slug.includes(filteredSearch)) {
-        matchesSearch = true
+        matchesSearch = true;
       }
     }
 
     if (criteria.includes('definition')) {
       if (entry.definition.toLowerCase().includes(filteredSearch)) {
-        matchesSearch = true
+        matchesSearch = true;
       }
     }
 
-    return matchesSearch
-  })
+    return matchesSearch;
+  });
 
-  const formattedResult = formatResults(results, search, criteria)
+  const formattedResult = formatResults(results, search, criteria);
 
-  return formattedResult
-}
+  return formattedResult;
+};
 
-export default searchDictionary
+export default searchDictionary;

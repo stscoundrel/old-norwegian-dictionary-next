@@ -554,7 +554,8 @@ exports[`Index page Matches snapshot 1`] = `
         Old Norwegian was a language spoken in Norway in the 11th and 14th century. It is a transitional stage between Old West Norse and Middle Norwegian, coming at the end of the Viking Age.
       </p>
       <p>
-        It is closely related to 
+        It is closely related to
+         
         <a
           href="https://old-icelandic.vercel.app/"
           rel="noopener noreferrer"
@@ -574,7 +575,8 @@ exports[`Index page Matches snapshot 1`] = `
       </p>
       <p>
         <em>
-          Magnus 
+          Magnus
+           
           <a
             href="/word/med"
             onClick={[Function]}
@@ -628,7 +630,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             son
           </a>
-           Hakonar 
+           
+          Hakonar
+           
           <a
             href="/word/konungr"
             onClick={[Function]}
@@ -646,7 +650,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             sonar son
           </a>
-           Suerris 
+           
+          Suerris
+           
           <a
             href="/word/konungr"
             onClick={[Function]}
@@ -664,7 +670,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             sender
           </a>
-           ollum gudes vínum ok sínum j frosto 
+           
+          ollum gudes vínum ok sínum j frosto
+           
           <a
             href="/word/thing"
             onClick={[Function]}
@@ -718,7 +726,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             sina
           </a>
-           Þer 
+           
+          Þer
+           
           <a
             href="/word/vita"
             onClick={[Function]}
@@ -727,7 +737,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             vitið
           </a>
-           at hínír skynsamozsto menn af frosto 
+           
+          at hínír skynsamozsto menn af frosto
+           
           <a
             href="/word/thing"
             onClick={[Function]}
@@ -754,7 +766,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             hafa
           </a>
-           iðurlega getet 
+           
+          iðurlega getet
+           
           <a
             href="/word/firir"
             onClick={[Function]}
@@ -772,7 +786,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             oss
           </a>
-           at þer hafet 
+           
+          at þer hafet
+           
           <a
             href="/word/spyrja"
             onClick={[Function]}
@@ -781,7 +797,9 @@ exports[`Index page Matches snapshot 1`] = `
           >
             spurt
           </a>
-           at ver hofum lut i at t bøta nokot um flæstar 
+           
+          at ver hofum lut i at t bøta nokot um flæstar
+           
           <a
             href="/word/logbok"
             onClick={[Function]}

@@ -1,41 +1,42 @@
-import { Crosslink } from 'lib/services/crosslinks'
-import ExternalLink from 'components/ExternalLink'
-import styles from './Crosslinks.module.scss'
+import { Crosslink } from 'lib/services/crosslinks';
+import ExternalLink from 'components/ExternalLink';
+import styles from './Crosslinks.module.scss';
 
 interface CrossLinkProps {
-  crosslinks: Crosslink[]
+  crosslinks: Crosslink[];
 }
 
 export default function Crosslinks({ crosslinks }: CrossLinkProps) {
   const getRelatedDictionaryName = (source: string): string => {
     if (source === 'old-norse') {
-      return 'Old Norse - Cleasby & Vigfusson Dictionary'
+      return 'Old Norse - Cleasby & Vigfusson Dictionary';
     }
 
     if (source === 'old-swedish') {
-      return 'Old Swedish - K.F Söderwall\'s Dictionary'
+      return "Old Swedish - K.F Söderwall's Dictionary";
     }
 
     if (source === 'old-icelandic') {
-      return 'Old Icelandic - Geir Zoëga\'s Dictionary'
+      return "Old Icelandic - Geir Zoëga's Dictionary";
     }
 
     if (source === 'old-danish') {
-      return 'Old Danish - Otto Kalkar\'s Dictionary'
+      return "Old Danish - Otto Kalkar's Dictionary";
     }
 
-    return ''
-  }
+    return '';
+  };
 
   if (crosslinks.length === 0) {
-    return null
+    return null;
   }
 
   return (
     <>
       <h4>Also available in related dictionaries:</h4>
-      <p>This headword also appears in dictionaries of other languages related
-        to Old Norwegian.
+      <p>
+        This headword also appears in dictionaries of other languages related to
+        Old Norwegian.
       </p>
       <ul className={styles.list}>
         {crosslinks.map(({ url, source }, index) => (
@@ -45,5 +46,5 @@ export default function Crosslinks({ crosslinks }: CrossLinkProps) {
         ))}
       </ul>
     </>
-  )
+  );
 }

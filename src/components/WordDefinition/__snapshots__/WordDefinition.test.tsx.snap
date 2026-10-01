@@ -23,12 +23,14 @@ exports[`WordDefinition component Matches snapshot (older spelling variant) 1`] 
         völlr
         "
       </em>
-       (or 
+       
+      (or 
       <em>
         vǫllr
       </em>
       )
-       in Norwegian.
+       
+      in Norwegian.
     </p>
     <p>
       As defined by the Johan Fritzer's Old Norwegian dictionary:
@@ -73,7 +75,8 @@ exports[`WordDefinition component Matches snapshot (older spelling variant) 1`] 
     <em>
       ö 
     </em>
-    to represent the original Old Norwegian (or Old Norse) vowel 
+    to represent the original Old Norwegian (or Old Norse) vowel
+     
     <em>
       ǫ
     </em>
@@ -208,7 +211,8 @@ exports[`WordDefinition component Matches snapshot 1`] = `
         þrályndi
         "
       </em>
-       in Norwegian.
+       
+      in Norwegian.
     </p>
     <p>
       As defined by the Johan Fritzer's Old Norwegian dictionary:

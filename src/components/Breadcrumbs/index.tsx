@@ -1,33 +1,33 @@
-import Link from 'next/link'
-import { ContentType } from 'lib/models/content-types'
-import { getBreadcrumbs } from 'lib/utils/breadcrumbs'
-import { getSchema } from 'lib/utils/schema'
-import { DictionaryEntry } from 'lib/models/dictionary'
-import styles from './Breadcrumbs.module.scss'
+import Link from 'next/link';
+import { ContentType } from 'lib/models/content-types';
+import { getBreadcrumbs } from 'lib/utils/breadcrumbs';
+import { getSchema } from 'lib/utils/schema';
+import { DictionaryEntry } from 'lib/models/dictionary';
+import styles from './Breadcrumbs.module.scss';
 
-interface BreadcrumbProps{
-  type: ContentType,
-  content: DictionaryEntry | DictionaryEntry[] | null
+interface BreadcrumbProps {
+  type: ContentType;
+  content: DictionaryEntry | DictionaryEntry[] | null;
 }
 
 export default function Breadcrumbs({ type, content }: BreadcrumbProps) {
   const getBreadCrumbData = () => {
-    let letter: string | null = null
-    let word: string | null = null
+    let letter: string | null = null;
+    let word: string | null = null;
 
     if (content) {
       if (type !== ContentType.Page) {
         if (type === ContentType.Letter && Array.isArray(content)) {
-          letter = content[0].word.charAt(0).toLowerCase()
+          letter = content[0].word.charAt(0).toLowerCase();
         }
 
         if (type !== ContentType.Letter && !Array.isArray(content)) {
-          letter = content.word.charAt(0).toLowerCase()
+          letter = content.word.charAt(0).toLowerCase();
         }
       }
 
       if (type === ContentType.Word && !Array.isArray(content)) {
-        word = content.word
+        word = content.word;
       }
     }
 
@@ -35,11 +35,11 @@ export default function Breadcrumbs({ type, content }: BreadcrumbProps) {
       type,
       letter,
       word,
-    }
-  }
+    };
+  };
 
-  const breadcrumbs = getBreadcrumbs(getBreadCrumbData())
-  const schema = getSchema(breadcrumbs, ContentType.Breadcrumbs)
+  const breadcrumbs = getBreadcrumbs(getBreadCrumbData());
+  const schema = getSchema(breadcrumbs, ContentType.Breadcrumbs);
 
   return (
     <nav className={styles.section}>
@@ -50,8 +50,11 @@ export default function Breadcrumbs({ type, content }: BreadcrumbProps) {
           </Link>
         ))}
 
-        <script type='application/ld+json' dangerouslySetInnerHTML={ { __html: schema } }/>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: schema }}
+        />
       </div>
     </nav>
-  )
+  );
 }

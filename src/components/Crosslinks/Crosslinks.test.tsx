@@ -1,8 +1,8 @@
-import renderer from 'react-test-renderer'
-import { DictionarySource } from 'scandinavian-dictionary-crosslinker'
-import { Crosslink } from 'lib/services/crosslinks'
-import Crosslinks from './index'
-import styles from './Crosslinks.module.scss'
+import renderer from 'react-test-renderer';
+import { DictionarySource } from 'scandinavian-dictionary-crosslinker';
+import { Crosslink } from 'lib/services/crosslinks';
+import Crosslinks from './index';
+import styles from './Crosslinks.module.scss';
 
 describe('Crosslinks component', () => {
   const crosslinks: Crosslink[] = [
@@ -22,34 +22,44 @@ describe('Crosslinks component', () => {
       url: 'https://old-danish-dictionary.vercel.app/word/fader',
       source: DictionarySource.OldDanish,
     },
-  ]
+  ];
 
   test('Matches the snapshot', () => {
-    const tree = renderer.create(
-      <Crosslinks crosslinks={crosslinks} />,
-    ).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
+    const tree = renderer
+      .create(<Crosslinks crosslinks={crosslinks} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
   test('Fails gracefully without crosslinks', () => {
-    const tree = renderer.create(<Crosslinks crosslinks={[]} />).toJSON()
+    const tree = renderer.create(<Crosslinks crosslinks={[]} />).toJSON();
 
-    expect(tree).toBeNull()
-  })
+    expect(tree).toBeNull();
+  });
 
   test('Has correct amount of crosslinks', () => {
-    const tree = renderer.create(<Crosslinks crosslinks={crosslinks} />)
-    const { root } = tree
+    const tree = renderer.create(<Crosslinks crosslinks={crosslinks} />);
+    const { root } = tree;
 
-    expect(root.findAllByProps({ className: styles.listItem }).length).toEqual(4)
-  })
+    expect(root.findAllByProps({ className: styles.listItem }).length).toEqual(
+      4,
+    );
+  });
 
   test('Has expected crosslink content', () => {
-    const tree = renderer.create(<Crosslinks crosslinks={crosslinks} />)
+    const tree = renderer.create(<Crosslinks crosslinks={crosslinks} />);
 
-    expect(JSON.stringify(tree)).toContain('Old Swedish - K.F Söderwall\'s Dictionary')
-    expect(JSON.stringify(tree)).toContain('Old Norse - Cleasby & Vigfusson Dictionary')
-    expect(JSON.stringify(tree)).toContain('Old Icelandic - Geir Zoëga\'s Dictionary')
-    expect(JSON.stringify(tree)).toContain('Old Danish - Otto Kalkar\'s Dictionary')
-  })
-})
+    expect(JSON.stringify(tree)).toContain(
+      "Old Swedish - K.F Söderwall's Dictionary",
+    );
+    expect(JSON.stringify(tree)).toContain(
+      'Old Norse - Cleasby & Vigfusson Dictionary',
+    );
+    expect(JSON.stringify(tree)).toContain(
+      "Old Icelandic - Geir Zoëga's Dictionary",
+    );
+    expect(JSON.stringify(tree)).toContain(
+      "Old Danish - Otto Kalkar's Dictionary",
+    );
+  });
+});
