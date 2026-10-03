@@ -28,7 +28,7 @@ describe('Revalidate  API endpoint', () => {
     // Should've received call for each word.
     expect(res.finished).toBeTruthy();
     expect(res.statusCode).toBe(401);
-    expect(mockRevalidate).toBeCalledTimes(0);
+    expect(mockRevalidate).toHaveBeenCalledTimes(0);
   });
 
   test('Should call revalidate', async () => {
@@ -57,6 +57,6 @@ describe('Revalidate  API endpoint', () => {
     // Should've received call for each word.
     expect(res.finished).toBeTruthy();
     expect(res.statusCode).toBe(200);
-    expect(mockRevalidate).toBeCalledTimes(500);
+    expect(mockRevalidate).toHaveBeenCalledTimes(500);
   });
 });
