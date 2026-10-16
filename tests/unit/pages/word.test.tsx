@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, act, renderToDOM } from '../../helpers/react';
 import { DictionarySource } from 'scandinavian-dictionary-crosslinker';
 import Word, { getStaticProps, getStaticPaths } from 'pages/word/[word]';
 import { getAlphabet } from 'lib/services/dictionary';
@@ -59,9 +58,7 @@ describe('Word page: render & usage', () => {
   const runes = 'ᚦᚱᛆᛚᛦᚿᚦᛁ';
 
   test('Does not crash', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(
+    renderToDOM(
       <Word
         entry={word}
         letters={getAlphabet()}
@@ -73,37 +70,33 @@ describe('Word page: render & usage', () => {
   });
 
   test('Matches snapshot', () => {
-    const tree = renderer
-      .create(
-        <Word
-          entry={word}
-          letters={getAlphabet()}
-          abbreviations={abbreviations}
-          crosslinks={crosslinks}
-          runes={runes}
-        />,
-      )
-      .toJSON();
+    const tree = createRenderer(
+      <Word
+        entry={word}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes}
+      />,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Returns null if entry is unavailable', () => {
-    const tree = renderer
-      .create(
-        <Word
-          entry={null as unknown as DictionaryEntry}
-          letters={getAlphabet()}
-          abbreviations={abbreviations}
-          crosslinks={crosslinks}
-          runes={runes}
-        />,
-      )
-      .toJSON();
+    const tree = createRenderer(
+      <Word
+        entry={null as unknown as DictionaryEntry}
+        letters={getAlphabet()}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes}
+      />,
+    ).toJSON();
     expect(tree).toBeNull();
   });
 
   test('Back button works', async () => {
-    const tree = renderer.create(
+    const tree = createRenderer(
       <Word
         entry={word}
         letters={getAlphabet()}
@@ -114,7 +107,7 @@ describe('Word page: render & usage', () => {
     );
 
     // Click back btn.
-    await renderer.act(async () => {
+    await act(async () => {
       expect(mockHandler).not.toHaveBeenCalled();
       await tree.root.findByProps({ text: 'Back' }).props.action();
 

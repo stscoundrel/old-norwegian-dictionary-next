@@ -16,6 +16,7 @@ exports[`Navigation component Matches snapshot 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
+        ref={[Function]}
       >
         <img
           alt="To home"
@@ -25,6 +26,7 @@ exports[`Navigation component Matches snapshot 1`] = `
           loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
+          ref={[Function]}
           src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
           srcSet="/_next/image?url=%2Ffavicon-48x48.png&w=32&q=75 1x, /_next/image?url=%2Ffavicon-48x48.png&w=64&q=75 2x"
           style={
@@ -67,6 +69,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             a
           </a>
@@ -80,6 +83,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             á
           </a>
@@ -93,6 +97,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             b
           </a>
@@ -106,6 +111,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             d
           </a>
@@ -119,6 +125,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             e
           </a>
@@ -132,6 +139,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             é
           </a>
@@ -145,6 +153,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             f
           </a>
@@ -158,6 +167,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             g
           </a>
@@ -171,6 +181,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             h
           </a>
@@ -184,6 +195,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             i
           </a>
@@ -197,6 +209,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             í
           </a>
@@ -210,6 +223,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             j
           </a>
@@ -223,6 +237,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             k
           </a>
@@ -236,6 +251,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             l
           </a>
@@ -249,6 +265,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             m
           </a>
@@ -262,6 +279,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             n
           </a>
@@ -275,6 +293,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             o
           </a>
@@ -288,6 +307,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             ó
           </a>
@@ -301,6 +321,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             p
           </a>
@@ -314,6 +335,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             r
           </a>
@@ -327,6 +349,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             s
           </a>
@@ -340,6 +363,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             t
           </a>
@@ -353,6 +377,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             u
           </a>
@@ -366,6 +391,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             ú
           </a>
@@ -379,6 +405,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             v
           </a>
@@ -392,6 +419,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             y
           </a>
@@ -405,6 +433,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             ý
           </a>
@@ -418,6 +447,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             þ
           </a>
@@ -431,6 +461,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             æ
           </a>
@@ -444,6 +475,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             œ
           </a>
@@ -457,6 +489,7 @@ exports[`Navigation component Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             ö
           </a>

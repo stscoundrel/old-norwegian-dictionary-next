@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import { DictionarySource } from 'scandinavian-dictionary-crosslinker';
 import WordDefinition from './index';
 
@@ -46,9 +45,7 @@ const runes2 = 'ᚠᚯᛚᛚᚱ';
 
 describe('WordDefinition component', () => {
   test('Does not crash', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(
+    renderToDOM(
       <WordDefinition
         data={word}
         abbreviations={abbreviations}
@@ -59,35 +56,31 @@ describe('WordDefinition component', () => {
   });
 
   test('Matches snapshot', () => {
-    const tree = renderer
-      .create(
-        <WordDefinition
-          data={word}
-          abbreviations={abbreviations}
-          crosslinks={crosslinks}
-          runes={runes1}
-        />,
-      )
-      .toJSON();
+    const tree = createRenderer(
+      <WordDefinition
+        data={word}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes1}
+      />,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Matches snapshot (older spelling variant)', () => {
-    const tree = renderer
-      .create(
-        <WordDefinition
-          data={wordWithOlderSpelling}
-          abbreviations={abbreviations}
-          crosslinks={crosslinks}
-          runes={runes2}
-        />,
-      )
-      .toJSON();
+    const tree = createRenderer(
+      <WordDefinition
+        data={wordWithOlderSpelling}
+        abbreviations={abbreviations}
+        crosslinks={crosslinks}
+        runes={runes2}
+      />,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Has correct label', () => {
-    const tree = renderer.create(
+    const tree = createRenderer(
       <WordDefinition
         data={word}
         abbreviations={abbreviations}

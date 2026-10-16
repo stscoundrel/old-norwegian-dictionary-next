@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import Layout from 'components/Layout';
 import { getByLetter, getWord, getAlphabet } from 'lib/services/dictionary';
 import { ContentType } from 'lib/models/content-types';
@@ -9,9 +8,7 @@ describe('Layout component', () => {
     const aWords = getByLetter('a').slice(0, 10);
 
     test('Does not crash', () => {
-      const div = document.createElement('div');
-      const root = ReactDOM.createRoot(div);
-      root.render(
+      renderToDOM(
         <Layout
           content={aWords}
           type={ContentType.Letter}
@@ -23,17 +20,15 @@ describe('Layout component', () => {
     });
 
     test('Matches snapshot', () => {
-      const tree = renderer
-        .create(
-          <Layout
-            content={aWords}
-            type={ContentType.Letter}
-            letters={getAlphabet()}
-            letter={{ letter: 'a', slug: 'a' }}
-            noSearch={false}
-          />,
-        )
-        .toJSON();
+      const tree = createRenderer(
+        <Layout
+          content={aWords}
+          type={ContentType.Letter}
+          letters={getAlphabet()}
+          letter={{ letter: 'a', slug: 'a' }}
+          noSearch={false}
+        />,
+      ).toJSON();
       expect(tree).toMatchSnapshot();
     });
   });
@@ -42,9 +37,7 @@ describe('Layout component', () => {
     const word = getWord('skilja');
 
     test('Does not crash', () => {
-      const div = document.createElement('div');
-      const root = ReactDOM.createRoot(div);
-      root.render(
+      renderToDOM(
         <Layout
           content={word}
           type={ContentType.Word}
@@ -56,17 +49,15 @@ describe('Layout component', () => {
     });
 
     test('Matches snapshot', () => {
-      const tree = renderer
-        .create(
-          <Layout
-            content={word}
-            type={ContentType.Word}
-            letters={getAlphabet()}
-            letter={{ letter: 'a', slug: 'a' }}
-            noSearch={false}
-          />,
-        )
-        .toJSON();
+      const tree = createRenderer(
+        <Layout
+          content={word}
+          type={ContentType.Word}
+          letters={getAlphabet()}
+          letter={{ letter: 'a', slug: 'a' }}
+          noSearch={false}
+        />,
+      ).toJSON();
       expect(tree).toMatchSnapshot();
     });
   });

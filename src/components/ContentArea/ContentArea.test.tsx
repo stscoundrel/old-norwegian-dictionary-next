@@ -1,12 +1,9 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import ContentArea from './index';
 
 describe('ContentArea component', () => {
   test('Does not crash', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(
+    renderToDOM(
       <ContentArea>
         <p>Content</p>
       </ContentArea>,
@@ -14,13 +11,11 @@ describe('ContentArea component', () => {
   });
 
   test('Matches snapshot', () => {
-    const tree = renderer
-      .create(
-        <ContentArea>
-          <p>Content</p>
-        </ContentArea>,
-      )
-      .toJSON();
+    const tree = createRenderer(
+      <ContentArea>
+        <p>Content</p>
+      </ContentArea>,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

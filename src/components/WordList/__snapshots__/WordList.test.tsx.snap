@@ -11,6 +11,7 @@ exports[`WordList component Matches snapshot 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
+      ref={[Function]}
     >
       af-burðr
     </a>
@@ -22,6 +23,7 @@ exports[`WordList component Matches snapshot 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
+      ref={[Function]}
     >
       af-búð
     </a>
@@ -33,6 +35,7 @@ exports[`WordList component Matches snapshot 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
+      ref={[Function]}
     >
       af-dalr
     </a>
@@ -44,6 +47,7 @@ exports[`WordList component Matches snapshot 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
+      ref={[Function]}
     >
       af-deilingr
     </a>
@@ -55,6 +59,7 @@ exports[`WordList component Matches snapshot 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
+      ref={[Function]}
     >
       af-dráttr
     </a>

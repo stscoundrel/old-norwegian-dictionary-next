@@ -17,6 +17,7 @@ exports[`Index page Matches snapshot 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
+          ref={[Function]}
         >
           <img
             alt="To home"
@@ -26,6 +27,7 @@ exports[`Index page Matches snapshot 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
+            ref={[Function]}
             src="/_next/image?url=%2Ffavicon-48x48.png&w=64&q=75"
             srcSet="/_next/image?url=%2Ffavicon-48x48.png&w=32&q=75 1x, /_next/image?url=%2Ffavicon-48x48.png&w=64&q=75 2x"
             style={
@@ -68,6 +70,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               a
             </a>
@@ -81,6 +84,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               á
             </a>
@@ -94,6 +98,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               b
             </a>
@@ -107,6 +112,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               d
             </a>
@@ -120,6 +126,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               e
             </a>
@@ -133,6 +140,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               é
             </a>
@@ -146,6 +154,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               f
             </a>
@@ -159,6 +168,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               g
             </a>
@@ -172,6 +182,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               h
             </a>
@@ -185,6 +196,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               i
             </a>
@@ -198,6 +210,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               í
             </a>
@@ -211,6 +224,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               j
             </a>
@@ -224,6 +238,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               k
             </a>
@@ -237,6 +252,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               l
             </a>
@@ -250,6 +266,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               m
             </a>
@@ -263,6 +280,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               n
             </a>
@@ -276,6 +294,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               o
             </a>
@@ -289,6 +308,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               ó
             </a>
@@ -302,6 +322,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               p
             </a>
@@ -315,6 +336,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               r
             </a>
@@ -328,6 +350,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               s
             </a>
@@ -341,6 +364,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               t
             </a>
@@ -354,6 +378,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               u
             </a>
@@ -367,6 +392,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               ú
             </a>
@@ -380,6 +406,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               v
             </a>
@@ -393,6 +420,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               y
             </a>
@@ -406,6 +434,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               ý
             </a>
@@ -419,6 +448,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               þ
             </a>
@@ -432,6 +462,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               æ
             </a>
@@ -445,6 +476,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               œ
             </a>
@@ -458,6 +490,7 @@ exports[`Index page Matches snapshot 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
+              ref={[Function]}
             >
               ö
             </a>
@@ -497,6 +530,7 @@ exports[`Index page Matches snapshot 1`] = `
           onClick={[Function]}
           onMouseEnter={[Function]}
           onTouchStart={[Function]}
+          ref={[Function]}
         >
           Old Norwegian Dictionary
         </a>
@@ -538,6 +572,7 @@ exports[`Index page Matches snapshot 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
+        ref={[Function]}
       >
         Search the dictionary
       </a>
@@ -582,6 +617,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             með
           </a>
@@ -591,6 +627,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             guðs
           </a>
@@ -600,6 +637,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             miskun
           </a>
@@ -609,6 +647,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             noregs
           </a>
@@ -618,6 +657,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             konungr
           </a>
@@ -627,6 +667,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             son
           </a>
@@ -638,6 +679,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             konungs
           </a>
@@ -647,6 +689,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             sonar son
           </a>
@@ -658,6 +701,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             konungs
           </a>
@@ -667,6 +711,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             sender
           </a>
@@ -678,6 +723,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             þings
           </a>
@@ -687,6 +733,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             logum
           </a>
@@ -696,6 +743,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             Qveðju
           </a>
@@ -705,6 +753,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             Guðs
           </a>
@@ -714,6 +763,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             ok
           </a>
@@ -723,6 +773,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             sina
           </a>
@@ -734,6 +785,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             vitið
           </a>
@@ -745,6 +797,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             þings
           </a>
@@ -754,6 +807,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             logum
           </a>
@@ -763,6 +817,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             hafa
           </a>
@@ -774,6 +829,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             firir
           </a>
@@ -783,6 +839,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             oss
           </a>
@@ -794,6 +851,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             spurt
           </a>
@@ -805,6 +863,7 @@ exports[`Index page Matches snapshot 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
+            ref={[Function]}
           >
             logbøkr
           </a>
@@ -1007,6 +1066,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 a
               </a>
@@ -1020,6 +1080,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 á
               </a>
@@ -1033,6 +1094,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 b
               </a>
@@ -1046,6 +1108,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 d
               </a>
@@ -1059,6 +1122,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 e
               </a>
@@ -1072,6 +1136,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 é
               </a>
@@ -1085,6 +1150,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 f
               </a>
@@ -1098,6 +1164,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 g
               </a>
@@ -1111,6 +1178,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 h
               </a>
@@ -1124,6 +1192,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 i
               </a>
@@ -1137,6 +1206,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 í
               </a>
@@ -1150,6 +1220,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 j
               </a>
@@ -1163,6 +1234,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 k
               </a>
@@ -1176,6 +1248,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 l
               </a>
@@ -1189,6 +1262,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 m
               </a>
@@ -1202,6 +1276,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 n
               </a>
@@ -1215,6 +1290,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 o
               </a>
@@ -1228,6 +1304,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 ó
               </a>
@@ -1241,6 +1318,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 p
               </a>
@@ -1254,6 +1332,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 r
               </a>
@@ -1267,6 +1346,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 s
               </a>
@@ -1280,6 +1360,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 t
               </a>
@@ -1293,6 +1374,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 u
               </a>
@@ -1306,6 +1388,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 ú
               </a>
@@ -1319,6 +1402,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 v
               </a>
@@ -1332,6 +1416,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 y
               </a>
@@ -1345,6 +1430,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 ý
               </a>
@@ -1358,6 +1444,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 þ
               </a>
@@ -1371,6 +1458,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 æ
               </a>
@@ -1384,6 +1472,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 œ
               </a>
@@ -1397,6 +1486,7 @@ exports[`Index page Matches snapshot 1`] = `
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
+                ref={[Function]}
               >
                 ö
               </a>
