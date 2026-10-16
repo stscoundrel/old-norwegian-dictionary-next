@@ -25,10 +25,10 @@
     "typecheck:integration": "tsc --project tests/integration/tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@serwist/next": "^9.5.13",
     "abbreviatrix": "^1.0.8",
     "markari": "^1.0.7",
     "next": "16.4.2",
-    "next-pwa": "^5.6.0",
     "old-norse-alphabet": "^1.2.5",
     "old-norse-alphabet-sort": "^1.1.13",
     "old-norwegian-dictionary": "^1.0.4",
@@ -39,6 +39,7 @@
     "riimut": "^0.9.1",
     "sass": "^1.105.2",
     "scandinavian-dictionary-crosslinker": "^0.7.0",
+    "serwist": "^9.5.13",
     "sitemap": "9.0.1",
     "slugify": "^1.6.9",
     "teljari": "^1.1.1"
