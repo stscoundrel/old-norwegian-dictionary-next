@@ -7,6 +7,7 @@ const customJestConfig: Config = {
   testEnvironment: 'jsdom',
   collectCoverageFrom: [
     'src/**',
+    '!src/sw.ts', // Service workers run outside Jest's DOM environment.
     '!**/*.d.ts',
     '!**/node_modules/**',
     '!.next/**',

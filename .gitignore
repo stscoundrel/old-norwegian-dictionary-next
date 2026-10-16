@@ -34,8 +34,8 @@ npm-debug.log*
 
 # Cypress
 tests/integration/logs
-/public/sw.js
-public/workbox-*.js
+/public/sw*
+/public/swe-worker*
 
 # TypeScript incremental build cache
 *.tsbuildinfo
