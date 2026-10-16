@@ -18,9 +18,11 @@
     "lint": "prettier src tests --check",
     "fix": "prettier src tests --write",
     "jest": "jest --verbose --passWithNoTests",
-    "test:unit": "npm run jest",
-    "test:integration": "cypress run --env env=test --spec 'tests/integration/tests/**/*'",
-    "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"80\", \"branches\":\"80\", \"lines\":\"90\"}}'"
+    "test:unit": "npm run jest --",
+    "test:integration": "cypress run --env env=test",
+    "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"80\", \"branches\":\"80\", \"lines\":\"90\"}}'",
+    "typecheck": "tsc --noEmit",
+    "typecheck:integration": "tsc --project tests/integration/tsconfig.json --noEmit"
   },
   "dependencies": {
     "abbreviatrix": "^1.0.8",

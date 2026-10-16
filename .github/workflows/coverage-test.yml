@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-node@v7
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run test:coverage
+    - run: npm ci
+    - run: npm run test:coverage -- --runInBand --testTimeout=5000
       env:
         CI: true
