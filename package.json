@@ -19,7 +19,7 @@
     "fix": "prettier src tests --write",
     "jest": "jest --verbose --passWithNoTests",
     "test:unit": "npm run jest --",
-    "test:integration": "cypress run --env env=test",
+    "test:integration": "cypress run",
     "test:coverage": "jest --coverage tests src/components --coverageThreshold='{\"global\":{\"statements\":\"90\", \"functions\":\"80\", \"branches\":\"80\", \"lines\":\"90\"}}'",
     "typecheck": "tsc --noEmit",
     "typecheck:integration": "tsc --project tests/integration/tsconfig.json --noEmit"
@@ -49,7 +49,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@types/react-test-renderer": "^19.3.0",
-    "cypress": "^15.21.1",
+    "cypress": "^16.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jafningjar": "^1.0.0",
     "jest": "^30.5.2",
