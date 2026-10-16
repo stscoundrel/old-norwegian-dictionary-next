@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import { DictionaryEntry } from 'lib/models/dictionary';
 import WordList from './index';
 
@@ -44,18 +43,16 @@ const words: DictionaryEntry[] = [
 
 describe('WordList component', () => {
   test('Does not crash', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(<WordList words={words} />);
+    renderToDOM(<WordList words={words} />);
   });
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(<WordList words={words} />).toJSON();
+    const tree = createRenderer(<WordList words={words} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Renders correct amount of words', () => {
-    const tree = renderer.create(<WordList words={words} />);
+    const tree = createRenderer(<WordList words={words} />);
     const { root } = tree;
 
     expect(root.findAllByType('ul').length).toEqual(1);

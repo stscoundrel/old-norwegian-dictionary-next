@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import { ContentType } from 'lib/models/content-types';
 import Breadcrumbs from './index';
 
@@ -13,20 +12,18 @@ describe('Breadcrumbs component', () => {
   };
 
   test('Default page: does not crach', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(<Breadcrumbs type={ContentType.Page} content={null} />);
+    renderToDOM(<Breadcrumbs type={ContentType.Page} content={null} />);
   });
 
   test('Default page: matches snapshot', () => {
-    const tree = renderer
-      .create(<Breadcrumbs type={ContentType.Page} content={null} />)
-      .toJSON();
+    const tree = createRenderer(
+      <Breadcrumbs type={ContentType.Page} content={null} />,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Default page: renders correct amount of breadcrumbs', () => {
-    const tree = renderer.create(
+    const tree = createRenderer(
       <Breadcrumbs type={ContentType.Page} content={null} />,
     );
     const { root } = tree;
@@ -35,20 +32,18 @@ describe('Breadcrumbs component', () => {
   });
 
   test('Letter page: does not crach', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(<Breadcrumbs type={ContentType.Letter} content={[word]} />);
+    renderToDOM(<Breadcrumbs type={ContentType.Letter} content={[word]} />);
   });
 
   test('Letter page: matches snapshot', () => {
-    const tree = renderer
-      .create(<Breadcrumbs type={ContentType.Letter} content={[word]} />)
-      .toJSON();
+    const tree = createRenderer(
+      <Breadcrumbs type={ContentType.Letter} content={[word]} />,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Letter page: renders correct amount of breadcrumbs', () => {
-    const tree = renderer.create(
+    const tree = createRenderer(
       <Breadcrumbs type={ContentType.Letter} content={[word]} />,
     );
     const { root } = tree;
@@ -57,20 +52,18 @@ describe('Breadcrumbs component', () => {
   });
 
   test('Word page: does not crach', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(<Breadcrumbs type={ContentType.Word} content={word} />);
+    renderToDOM(<Breadcrumbs type={ContentType.Word} content={word} />);
   });
 
   test('Word page: matches snapshot', () => {
-    const tree = renderer
-      .create(<Breadcrumbs type={ContentType.Word} content={word} />)
-      .toJSON();
+    const tree = createRenderer(
+      <Breadcrumbs type={ContentType.Word} content={word} />,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Word page: renders correct amount of breadcrumbs', () => {
-    const tree = renderer.create(
+    const tree = createRenderer(
       <Breadcrumbs type={ContentType.Word} content={word} />,
     );
     const { root } = tree;

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 // Components.
 import Head from 'components/Head';
 import Footer from 'components/Footer';
@@ -14,7 +15,7 @@ interface LayoutProps {
   letters: AlphabetLetter[];
   letter: AlphabetLetter | null;
   noSearch: boolean;
-  children?: JSX.Element | JSX.Element[];
+  children?: ReactNode;
 }
 
 export default function Layout({

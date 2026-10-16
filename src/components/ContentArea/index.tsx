@@ -1,7 +1,8 @@
+import type { ReactNode } from 'react';
 import styles from './ContentArea.module.scss';
 
 interface ContentAreaProps {
-  children: JSX.Element | JSX.Element[];
+  children: ReactNode;
 }
 
 export default function ContentArea({ children }: ContentAreaProps) {

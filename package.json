@@ -27,14 +27,14 @@
   "dependencies": {
     "abbreviatrix": "^1.0.8",
     "markari": "^1.0.7",
-    "next": "^16.3.4",
+    "next": "16.4.2",
     "next-pwa": "^5.6.0",
     "old-norse-alphabet": "^1.2.5",
     "old-norse-alphabet-sort": "^1.1.13",
     "old-norwegian-dictionary": "^1.0.4",
     "old-norwegian-dictionary-abbreviations": "^1.0.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "reset-css": "^5.0.2",
     "riimut": "^0.9.1",
     "sass": "^1.104.0",
@@ -46,7 +46,7 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^26.5.0",
-    "@types/react": "^18.3.31",
+    "@types/react": "^19.3.0",
     "cypress": "^15.21.1",
     "identity-obj-proxy": "^3.0.0",
     "jafningjar": "^1.0.0",
@@ -54,7 +54,9 @@
     "jest-environment-jsdom": "^30.5.2",
     "node-mocks-http": "^1.18.1",
     "prettier": "^3.9.9",
-    "react-test-renderer": "^18.3.1",
-    "typescript": "^5.9.3"
+    "react-test-renderer": "19.3.1",
+    "typescript": "^5.9.3",
+    "@types/react-dom": "^19.3.0",
+    "@types/react-test-renderer": "^19.3.0"
   }
 }

@@ -11,6 +11,12 @@ updates:
           - "jest"
           - "jest-*"
           - "@types/jest"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-test-renderer"
+          - "@types/react*"
       npm-minor-and-patch:
         patterns:
           - "*"
