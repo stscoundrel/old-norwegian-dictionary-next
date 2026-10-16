@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .section {
   border-bottom: 1px solid $color-blue;
   padding: 16px 0;
