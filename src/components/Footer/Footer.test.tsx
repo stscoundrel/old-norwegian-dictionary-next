@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import Footer from 'components/Footer';
 
 const letters = [
@@ -15,13 +14,11 @@ const letters = [
 
 describe('Footer component', () => {
   test('Does not crash', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(<Footer letters={letters} />);
+    renderToDOM(<Footer letters={letters} />);
   });
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(<Footer letters={letters} />).toJSON();
+    const tree = createRenderer(<Footer letters={letters} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

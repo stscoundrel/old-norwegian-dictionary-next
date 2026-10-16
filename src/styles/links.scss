@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 a {
   color: $color-blue;
   text-decoration: none;

@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress'
 
 export default defineConfig({
+  defaultBrowser: 'chrome',
   defaultCommandTimeout: 15000,
   retries: 4,
   fixturesFolder: 'tests/integration/config/fixtures',

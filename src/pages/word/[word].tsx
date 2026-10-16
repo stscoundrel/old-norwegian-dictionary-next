@@ -26,7 +26,7 @@ import Button from 'components/Button';
 import { ContentType } from 'lib/models/content-types';
 import type { DictionaryEntry } from 'lib/models/dictionary';
 import { getCrossLinks } from 'lib/services/crosslinks';
-import { lettersToRunes } from 'riimut/dist/dialects/medieval-futhork';
+import { medievalFuthork } from 'riimut';
 
 interface WordPageProps {
   entry: DictionaryEntry;
@@ -93,7 +93,7 @@ export async function getStaticProps({
   const letters = getAlphabet();
   const abbreviations = getAbbreviations(entry);
   const crosslinks = getCrossLinks(entry);
-  const runes = lettersToRunes(entry.word);
+  const runes = medievalFuthork.lettersToRunes(entry.word);
 
   return {
     props: {

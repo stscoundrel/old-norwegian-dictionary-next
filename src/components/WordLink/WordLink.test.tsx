@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom/client';
-import renderer from 'react-test-renderer';
+import { createRenderer, renderToDOM } from '../../../tests/helpers/react';
 import WordLink from './index';
 
 const word = {
@@ -9,18 +8,16 @@ const word = {
 
 describe('WordLink component', () => {
   test('Does not crash', () => {
-    const div = document.createElement('div');
-    const root = ReactDOM.createRoot(div);
-    root.render(<WordLink data={word} />);
+    renderToDOM(<WordLink data={word} />);
   });
 
   test('Matches snapshot', () => {
-    const tree = renderer.create(<WordLink data={word} />).toJSON();
+    const tree = createRenderer(<WordLink data={word} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('Has correct label', () => {
-    const tree = renderer.create(<WordLink data={word} />);
+    const tree = createRenderer(<WordLink data={word} />);
     const { root } = tree;
 
     expect(root.findByType('a').children).toEqual([word.word]);
