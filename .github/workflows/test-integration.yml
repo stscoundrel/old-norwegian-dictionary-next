@@ -18,14 +18,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-      - run: npm ci
+      - name: Install dependencies and Cypress
+        uses: cypress-io/github-action@v7
+        with:
+          runTests: false
       - run: npm run typecheck:integration
       - name: Test with Headless
         uses: cypress-io/github-action@v7
         with:
           install: false
-          browser: chrome
-          headless: true
           build: npm run build
           start: npm run start
           wait-on: http://localhost:3000
