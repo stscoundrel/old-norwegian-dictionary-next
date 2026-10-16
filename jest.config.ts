@@ -1,8 +1,9 @@
-const nextJest = require('next/jest')
+import nextJest from 'next/jest.js'
+import type { Config } from 'jest'
 
-const createJestConfig = nextJest({ __dirname })
+const createJestConfig = nextJest()
 
-const customJestConfig = {
+const customJestConfig: Config = {
   testEnvironment: 'jsdom',
   collectCoverageFrom: [
     'src/**',
@@ -27,4 +28,4 @@ const customJestConfig = {
   ],
 }
 
-module.exports = createJestConfig(customJestConfig)
+export default createJestConfig(customJestConfig)
